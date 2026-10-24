@@ -3,16 +3,22 @@
 // 60 Hz frame (1 per frame at 120 Hz), with no ease-out or pause at each tile.
 
 export const WALK_MS = 100;
+// A tap is one step: holding a key from rest only starts walking after this delay, like keyboard
+// auto-repeat. Taps commonly last 80-150ms, so without it a tap was randomly one or two steps.
+export const REPEAT_DELAY_MS = 250;
 
 /**
  * When the next step should happen, or null if not yet. lastStep is the time of the previous step
  * (null if none). A fresh key press always steps at once, so quick taps and turns are never dropped
  * or delayed. While a key is held the step lands exactly WALK_MS after the last one, even if this
- * frame is a little late; after a pause the step happens now.
+ * frame is a little late; after a pause the step happens now. pressedAt is when the key was pressed
+ * from rest (no other direction held): held steps wait until REPEAT_DELAY_MS after it.
  */
-export function nextStep(lastStep, t, held, fresh = false) {
+export function nextStep(lastStep, t, held, fresh = false, pressedAt = null) {
   if (!held) return null;
-  if (fresh || lastStep == null || t - lastStep >= 2 * WALK_MS) return t;
+  if (fresh) return t;
+  if (pressedAt != null && t - pressedAt < REPEAT_DELAY_MS) return null;
+  if (lastStep == null || t - lastStep >= 2 * WALK_MS) return t;
   if (t - lastStep >= WALK_MS) return lastStep + WALK_MS;
   return null;
 }

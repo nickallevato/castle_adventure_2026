@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { WALK_MS, createWalker, nextStep, walkPos } from "../../src/ui/walk.js";
+import { REPEAT_DELAY_MS, WALK_MS, createWalker, nextStep, walkPos } from "../../src/ui/walk.js";
 
 const TILE = 12;
 
@@ -51,4 +51,18 @@ test("a step taken mid-glide continues from where the sprite is, with no jump ba
   v.startFrom(TILE, 0, 1050);                    // tap again: glide on toward 24
   assert.equal(walkPos(v, 2 * TILE, 0, 1050).x, mid);
   assert.equal(walkPos(v, 2 * TILE, 0, 1050 + WALK_MS).x, 2 * TILE);
+});
+
+test("a tap is exactly one step: holding from rest only repeats after REPEAT_DELAY_MS", () => {
+  // simulate 60 Hz frames for a key held `ms` long, pressed from rest at t=1000
+  const steps = (ms) => {
+    let lastStep = nextStep(null, 1000, true, true, 1000), n = 1;
+    for (let t = 1000 + 1000 / 60; t < 1000 + ms; t += 1000 / 60) {
+      const due = nextStep(lastStep, t, true, false, 1000);
+      if (due !== null) { lastStep = due; n++; }
+    }
+    return n;
+  };
+  for (const ms of [50, 100, 150, 200, REPEAT_DELAY_MS - 1]) assert.equal(steps(ms), 1, `${ms}ms tap`);
+  assert.ok(steps(1000) >= 8, "holding still walks");
 });
