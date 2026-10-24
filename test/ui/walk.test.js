@@ -38,3 +38,17 @@ test("starting from rest steps at once; after a pause the next step starts on th
   assert.equal(nextStep(500, 2000, true), 2000);     // long gap: restart from now
   assert.equal(nextStep(500, 700, false), null);     // nothing held
 });
+
+test("a fresh press steps at once, even mid-step, so quick taps and turns are never dropped", () => {
+  assert.equal(nextStep(500, 560, true, true), 560);
+  assert.equal(nextStep(500, 560, true), null); // a held key still waits for the beat
+});
+
+test("a step taken mid-glide continues from where the sprite is, with no jump back", () => {
+  const v = createWalker(0, 0);
+  v.startFrom(0, 0, 1000);                       // glide 0 -> 12
+  const mid = walkPos(v, TILE, 0, 1050).x;       // halfway
+  v.startFrom(TILE, 0, 1050);                    // tap again: glide on toward 24
+  assert.equal(walkPos(v, 2 * TILE, 0, 1050).x, mid);
+  assert.equal(walkPos(v, 2 * TILE, 0, 1050 + WALK_MS).x, 2 * TILE);
+});

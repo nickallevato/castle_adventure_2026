@@ -169,8 +169,8 @@ export class App {
 
   // ---------- actions and events ----------
   /** Step now if the walk rhythm allows it (a fresh press, or the next beat while held). */
-  tryMove(dir, t = now()) {
-    const due = nextStep(this.lastStep, t, !!dir);
+  tryMove(dir, t = now(), fresh = false) {
+    const due = nextStep(this.lastStep, t, !!dir, fresh);
     if (due !== null) this.move(dir, due);
   }
 
@@ -194,7 +194,7 @@ export class App {
     this.handleEvents(ev || []);
     const p = this.state.player, v = this.view.player;
     if (v && p.room === before.room && (p.row !== before.row || p.col !== before.col)) {
-      v.start(before.col * TILE, before.row * TILE, at);
+      v.startFrom(before.col * TILE, before.row * TILE, at);
     } else if (v && p.room === before.room && p.facing !== before.facing) { /* turn in place */ }
     this.refresh();
   }
@@ -344,7 +344,7 @@ export class App {
     document.getElementById("btn-map").addEventListener("click", () => this.map.open({ mode: "explored" }));
     for (const b of document.querySelectorAll("#dpad [data-dir]")) {
       const dir = b.dataset.dir;
-      const down = (e) => { e.preventDefault(); b.setPointerCapture?.(e.pointerId); this.held = this.held.filter((x) => x !== dir).concat(dir); this.tryMove(dir); };
+      const down = (e) => { e.preventDefault(); b.setPointerCapture?.(e.pointerId); this.held = this.held.filter((x) => x !== dir).concat(dir); this.tryMove(dir, now(), true); };
       const up = () => { this.held = this.held.filter((x) => x !== dir); };
       b.addEventListener("pointerdown", down);
       b.addEventListener("pointerup", up);
@@ -392,7 +392,7 @@ export class App {
       e.preventDefault();
       if (e.repeat) return;
       this.held = this.held.filter((x) => x !== d).concat(d);
-      this.tryMove(this.heldDir());
+      this.tryMove(this.heldDir(), now(), true);
       return;
     }
     if (k === "escape") { e.preventDefault(); return this.openMenu(); }

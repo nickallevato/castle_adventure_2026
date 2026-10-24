@@ -6,12 +6,13 @@ export const WALK_MS = 100;
 
 /**
  * When the next step should happen, or null if not yet. lastStep is the time of the previous step
- * (null if none). While walking continuously the step lands exactly WALK_MS after the last one, even
- * if this frame is a little late; after a pause the step happens now.
+ * (null if none). A fresh key press always steps at once, so quick taps and turns are never dropped
+ * or delayed. While a key is held the step lands exactly WALK_MS after the last one, even if this
+ * frame is a little late; after a pause the step happens now.
  */
-export function nextStep(lastStep, t, held) {
+export function nextStep(lastStep, t, held, fresh = false) {
   if (!held) return null;
-  if (lastStep == null || t - lastStep >= 2 * WALK_MS) return t;
+  if (fresh || lastStep == null || t - lastStep >= 2 * WALK_MS) return t;
   if (t - lastStep >= WALK_MS) return lastStep + WALK_MS;
   return null;
 }
@@ -22,6 +23,8 @@ export function createWalker(x, y) {
     /** Begin gliding from (fx, fy) at time t0 toward whatever target walkPos is given. */
     start(fx, fy, t0) { this.fx = fx; this.fy = fy; this.t0 = t0; this.step++; },
     walking(t) { return this.t0 != null && t - this.t0 < WALK_MS; },
+    /** Begin the next glide from wherever the sprite is now (mid-glide after a quick tap or turn). */
+    startFrom(tx, ty, t0) { if (this.walking(t0)) walkPos(this, tx, ty, t0); else { this.x = tx; this.y = ty; } this.start(this.x, this.y, t0); },
   };
 }
 
