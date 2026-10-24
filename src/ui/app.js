@@ -10,9 +10,9 @@ import { roomTitle } from "./room-names.js";
 import { computeWorldLayout } from "./world-layout.js";
 import { MapView } from "./worldmap.js";
 import { DevPanel, showGallery } from "./dev.js";
+import { createWalker, nextStep, walkPos } from "./walk.js";
 
 const DIR_KEYS = { arrowup: "north", w: "north", arrowdown: "south", s: "south", arrowleft: "west", a: "west", arrowright: "east", d: "east" };
-const STEP_MS = 110, REPEAT_MS = 140;
 const now = () => performance.now();
 
 export class App {
@@ -30,7 +30,7 @@ export class App {
     this.mode = "title";
     this.overlay = null; // { kind, close }
     this.held = [];
-    this.lastStep = 0;
+    this.lastStep = null;
     this.view = { player: null, mons: new Map() };
     this.effects = [];
     this.reveal = false;
@@ -144,7 +144,7 @@ export class App {
     const r = this.roomById.get(this.room);
     this.hud.setRoom(roomTitle(r?.description), r?.description || "");
     const p = this.state.player;
-    this.view.player = { x: p.col * TILE, y: p.row * TILE, fx: p.col * TILE, fy: p.row * TILE, t0: 0, step: 0 };
+    this.view.player = createWalker(p.col * TILE, p.row * TILE);
     this.view.mons.clear();
   }
 
@@ -168,12 +168,18 @@ export class App {
   safe(fn, fallback) { try { return fn(); } catch (e) { console.warn("[castle] engine call failed", e); return fallback; } }
 
   // ---------- actions and events ----------
-  move(dir) {
+  /** Step now if the walk rhythm allows it (a fresh press, or the next beat while held). */
+  tryMove(dir, t = now()) {
+    const due = nextStep(this.lastStep, t, !!dir);
+    if (due !== null) this.move(dir, due);
+  }
+
+  move(dir, at = now()) {
     if (!this.canPlay()) return;
     const before = this.state.player;
+    this.lastStep = at;
     const ev = this.safe(() => this.game.act({ type: "move", dir }), []);
-    this.after(ev, before);
-    this.lastStep = now();
+    this.after(ev, before, at);
   }
 
   doAction(a) {
@@ -183,12 +189,12 @@ export class App {
     this.after(ev, before);
   }
 
-  after(ev, before) {
+  after(ev, before, at = now()) {
     this.state = this.game.getState();
     this.handleEvents(ev || []);
     const p = this.state.player, v = this.view.player;
     if (v && p.room === before.room && (p.row !== before.row || p.col !== before.col)) {
-      v.fx = v.x; v.fy = v.y; v.t0 = now(); v.step++;
+      v.start(before.col * TILE, before.row * TILE, at);
     } else if (v && p.room === before.room && p.facing !== before.facing) { /* turn in place */ }
     this.refresh();
   }
@@ -263,7 +269,7 @@ export class App {
     if (!paused) {
       // held direction repeat
       const dir = this.heldDir();
-      if (dir && t - this.lastStep >= REPEAT_MS) this.move(dir);
+      if (dir) this.tryMove(dir, t);
       const ev = this.safe(() => this.game.tick(dt), []);
       if (ev && ev.length) { this.state = this.game.getState(); this.handleEvents(ev); this.refresh(); }
       else if (this.mode === "play" && (t | 0) % 6 === 0) this.state = this.game.getState();
@@ -282,12 +288,7 @@ export class App {
     const v = this.view.player;
     const p = st.player;
     const tx = p.col * TILE, ty = p.row * TILE;
-    if (v) {
-      const k = v.t0 ? Math.min(1, (t - v.t0) / STEP_MS) : 1;
-      const e = k * (2 - k);
-      v.x = v.fx + (tx - v.fx) * e; v.y = v.fy + (ty - v.fy) * e;
-      if (k >= 1) { v.fx = tx; v.fy = ty; }
-    }
+    if (v) walkPos(v, tx, ty, t);
     const light = v ? { x: v.x + 6, y: v.y + 6 } : null;
     const inLight = (x, y) => !dark || this.reveal || !light || Math.hypot(x + 6 - light.x, y + 6 - light.y) < 60;
     if (showRoom) {
@@ -312,7 +313,7 @@ export class App {
         ents.push({ bob: monsterBob(m.kind, m.kind === "door" ? 0 : frame, dark), x: mv.x, y: mv.y });
       }
       if (v && st.status !== "dead") {
-        const walking = v.t0 && t - v.t0 < STEP_MS + 40;
+        const walking = v.walking(t);
         const f = walking ? (v.step & 1) : 0;
         let sx = v.x, sy = v.y;
         if (this.shakeUntil && t < this.shakeUntil) sx += Math.round(Math.sin(t * 0.09) * 1.5);
@@ -343,7 +344,7 @@ export class App {
     document.getElementById("btn-map").addEventListener("click", () => this.map.open({ mode: "explored" }));
     for (const b of document.querySelectorAll("#dpad [data-dir]")) {
       const dir = b.dataset.dir;
-      const down = (e) => { e.preventDefault(); b.setPointerCapture?.(e.pointerId); this.held = this.held.filter((x) => x !== dir).concat(dir); this.move(dir); };
+      const down = (e) => { e.preventDefault(); b.setPointerCapture?.(e.pointerId); this.held = this.held.filter((x) => x !== dir).concat(dir); this.tryMove(dir); };
       const up = () => { this.held = this.held.filter((x) => x !== dir); };
       b.addEventListener("pointerdown", down);
       b.addEventListener("pointerup", up);
@@ -391,7 +392,7 @@ export class App {
       e.preventDefault();
       if (e.repeat) return;
       this.held = this.held.filter((x) => x !== d).concat(d);
-      this.move(this.heldDir());
+      this.tryMove(this.heldDir());
       return;
     }
     if (k === "escape") { e.preventDefault(); return this.openMenu(); }

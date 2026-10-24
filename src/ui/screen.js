@@ -170,17 +170,20 @@ export class GameScreen {
     if (this.statusDirty) this.drawStatus();
 
     // registers
+    // cycles and flicker follow real time in vblank units, so 60/120/144 Hz displays sample them
+    // evenly instead of repeating a frame whenever the 50 Hz tick hasn't advanced
+    const vt = now / VBLANK_MS;
     const mood = room.mood;
     let regs;
     if (room.dark) {
-      const base = applyCycles(mood.base64, mood.cycles, tick);
+      const base = applyCycles(mood.base64, mood.cycles, vt);
       regs = darkLevels(base, mood.lamp, [0.11, this.flicker.g1, this.flicker.g2]);
     } else {
-      regs = animateTorch(applyCycles(mood.regs, mood.cycles, tick), mood, tick);
+      regs = animateTorch(applyCycles(mood.regs, mood.cycles, vt), mood, vt);
     }
     const k = this.fadeK;
     if (k < 1) for (let i = 0; i < 256; i++) regs[i] = lerpRGB(0, regs[i], k);
-    const copper = this.buildCopper(mood, regs, k, tick, room.dark);
+    const copper = this.buildCopper(mood, regs, k, vt, room.dark);
     this.display.render(this.image, regs, copper);
     this.octx.putImageData(this.image, 0, 0);
     this.ctx.imageSmoothingEnabled = false;
