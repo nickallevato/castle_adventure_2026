@@ -1,0 +1,57 @@
+name: Test and deploy (S3 + CloudFront)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: castles-deploy
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: build
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # No dependencies: the suite is Node's built-in test runner.
+      - name: Test
+        run: npm test
+
+  # Publishes https://castles.bmux.sh with the same tools/deploy.sh used by hand. The bucket and
+  # distribution are named in that script; CI only supplies credentials.
+  deploy:
+    needs: test
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: build
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_REGION: ${{ vars.AWS_REGION || 'us-west-2' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preflight — credentials present
+        shell: bash
+        run: |
+          missing=
+          [ -n "$AWS_ACCESS_KEY_ID" ]     || missing="$missing AWS_ACCESS_KEY_ID"
+          [ -n "$AWS_SECRET_ACCESS_KEY" ] || missing="$missing AWS_SECRET_ACCESS_KEY"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing repo secrets:$missing (Settings -> Actions -> Secrets)"
+            exit 1
+          fi
+
+      # aws-cli via docker (as in bmux and jumper) so the runner needs no local aws install.
+      - name: Deploy
+        shell: bash
+        run: |
+          docker run --rm -v "$PWD:/site:ro" -w /site --entrypoint sh \
+            -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_REGION \
+            amazon/aws-cli tools/deploy.sh
