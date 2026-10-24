@@ -50,6 +50,7 @@ There are no dependencies and no build step. You only need Node 22 or later.
 ```sh
 npm start        # http://localhost:8000
 npm test         # engine, renderer and a full 1550-point playthrough
+npm run deploy   # publish to castles.bmux.sh (needs AWS credentials)
 ```
 
 The browser needs to support JSON module imports: Chrome 123+, Firefox 138+ or Safari 17.2+.
