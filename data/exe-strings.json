@@ -1,0 +1,1766 @@
+[
+ {
+  "offset": 59784,
+  "text": "CASTLE.RAN"
+ },
+ {
+  "offset": 59810,
+  "text": "│"
+ },
+ {
+  "offset": 59820,
+  "text": "─"
+ },
+ {
+  "offset": 59830,
+  "text": "┘"
+ },
+ {
+  "offset": 59864,
+  "text": " "
+ },
+ {
+  "offset": 59906,
+  "text": "There is a puff"
+ },
+ {
+  "offset": 59926,
+  "text": "of smoke & you"
+ },
+ {
+  "offset": 59944,
+  "text": "appear in the"
+ },
+ {
+  "offset": 59962,
+  "text": "Sorcerers room!"
+ },
+ {
+  "offset": 59986,
+  "text": "▌  ▐"
+ },
+ {
+  "offset": 60002,
+  "text": "?"
+ },
+ {
+  "offset": 60008,
+  "text": "_"
+ },
+ {
+  "offset": 60038,
+  "text": "G"
+ },
+ {
+  "offset": 60044,
+  "text": "H"
+ },
+ {
+  "offset": 60054,
+  "text": "I"
+ },
+ {
+  "offset": 60060,
+  "text": "K"
+ },
+ {
+  "offset": 60066,
+  "text": "M"
+ },
+ {
+  "offset": 60072,
+  "text": "O"
+ },
+ {
+  "offset": 60078,
+  "text": "P"
+ },
+ {
+  "offset": 60084,
+  "text": "Q"
+ },
+ {
+  "offset": 60110,
+  "text": "N"
+ },
+ {
+  "offset": 60116,
+  "text": "S"
+ },
+ {
+  "offset": 60122,
+  "text": "W"
+ },
+ {
+  "offset": 60128,
+  "text": "E"
+ },
+ {
+  "offset": 60134,
+  "text": "U"
+ },
+ {
+  "offset": 60140,
+  "text": "D"
+ },
+ {
+  "offset": 60174,
+  "text": "It's too dark"
+ },
+ {
+  "offset": 60192,
+  "text": "to go that way!"
+ },
+ {
+  "offset": 60216,
+  "text": "INV"
+ },
+ {
+  "offset": 60224,
+  "text": "QUIT"
+ },
+ {
+  "offset": 60232,
+  "text": "You've ended the game!"
+ },
+ {
+  "offset": 60258,
+  "text": "LOOK"
+ },
+ {
+  "offset": 60266,
+  "text": "SEARCH"
+ },
+ {
+  "offset": 60276,
+  "text": "EXAMINE"
+ },
+ {
+  "offset": 60288,
+  "text": "DROP"
+ },
+ {
+  "offset": 60296,
+  "text": "THROW"
+ },
+ {
+  "offset": 60306,
+  "text": "FILL"
+ },
+ {
+  "offset": 60314,
+  "text": "FLASK"
+ },
+ {
+  "offset": 60324,
+  "text": "GET"
+ },
+ {
+  "offset": 60332,
+  "text": "WINE"
+ },
+ {
+  "offset": 60340,
+  "text": "WATER"
+ },
+ {
+  "offset": 60350,
+  "text": "TAKE"
+ },
+ {
+  "offset": 60358,
+  "text": "WEAR"
+ },
+ {
+  "offset": 60366,
+  "text": "PLAY"
+ },
+ {
+  "offset": 60374,
+  "text": "WAVE"
+ },
+ {
+  "offset": 60382,
+  "text": "RUB"
+ },
+ {
+  "offset": 60390,
+  "text": "CLEAN"
+ },
+ {
+  "offset": 60400,
+  "text": "SAY"
+ },
+ {
+  "offset": 60408,
+  "text": "OPEN"
+ },
+ {
+  "offset": 60416,
+  "text": "UNLOCK"
+ },
+ {
+  "offset": 60426,
+  "text": "CLOSE"
+ },
+ {
+  "offset": 60436,
+  "text": "LOCK"
+ },
+ {
+  "offset": 60444,
+  "text": "DRINK"
+ },
+ {
+  "offset": 60454,
+  "text": "EAT"
+ },
+ {
+  "offset": 60462,
+  "text": " I'm not"
+ },
+ {
+  "offset": 60474,
+  "text": " hungry!"
+ },
+ {
+  "offset": 60486,
+  "text": "READ"
+ },
+ {
+  "offset": 60494,
+  "text": "JUMP"
+ },
+ {
+  "offset": 60502,
+  "text": "LEEP"
+ },
+ {
+  "offset": 60510,
+  "text": "POUR"
+ },
+ {
+  "offset": 60518,
+  "text": "CLIMB"
+ },
+ {
+  "offset": 60528,
+  "text": "I don't need"
+ },
+ {
+  "offset": 60544,
+  "text": "to climb."
+ },
+ {
+  "offset": 60562,
+  "text": "MIRROR"
+ },
+ {
+  "offset": 60572,
+  "text": " The wicked"
+ },
+ {
+  "offset": 60588,
+  "text": "witch never"
+ },
+ {
+  "offset": 60604,
+  "text": "lived here!!"
+ },
+ {
+  "offset": 60620,
+  "text": "PET"
+ },
+ {
+  "offset": 60628,
+  "text": "KILL"
+ },
+ {
+  "offset": 60636,
+  "text": "SHOW"
+ },
+ {
+  "offset": 60644,
+  "text": "SAVE"
+ },
+ {
+  "offset": 60652,
+  "text": "LOAD"
+ },
+ {
+  "offset": 60660,
+  "text": "What???"
+ },
+ {
+  "offset": 60676,
+  "text": "       "
+ },
+ {
+  "offset": 60696,
+  "text": "The Door is"
+ },
+ {
+  "offset": 60712,
+  "text": "locked."
+ },
+ {
+  "offset": 60728,
+  "text": "The Gate is"
+ },
+ {
+  "offset": 60744,
+  "text": "The Vampire"
+ },
+ {
+  "offset": 60760,
+  "text": "is blocking"
+ },
+ {
+  "offset": 60776,
+  "text": "your way. He"
+ },
+ {
+  "offset": 60792,
+  "text": "can't be hurt."
+ },
+ {
+  "offset": 60814,
+  "text": "The Fairy"
+ },
+ {
+  "offset": 60832,
+  "text": " Can't carry"
+ },
+ {
+  "offset": 60848,
+  "text": " any more!"
+ },
+ {
+  "offset": 60870,
+  "text": "The "
+ },
+ {
+  "offset": 60878,
+  "text": "Struck you!"
+ },
+ {
+  "offset": 60898,
+  "text": "has Killed you!"
+ },
+ {
+  "offset": 60918,
+  "text": "The Helmet"
+ },
+ {
+  "offset": 60932,
+  "text": "helped."
+ },
+ {
+  "offset": 60944,
+  "text": "You have no"
+ },
+ {
+  "offset": 60960,
+  "text": "Weapon!"
+ },
+ {
+  "offset": 60976,
+  "text": "You struck"
+ },
+ {
+  "offset": 60990,
+  "text": "the "
+ },
+ {
+  "offset": 60998,
+  "text": "!"
+ },
+ {
+  "offset": 61004,
+  "text": "You Killed"
+ },
+ {
+  "offset": 61018,
+  "text": "Dead "
+ },
+ {
+  "offset": 61028,
+  "text": "TABLE"
+ },
+ {
+  "offset": 61038,
+  "text": "DESK"
+ },
+ {
+  "offset": 61046,
+  "text": "BED"
+ },
+ {
+  "offset": 61054,
+  "text": "BEDS"
+ },
+ {
+  "offset": 61062,
+  "text": "SHELF"
+ },
+ {
+  "offset": 61072,
+  "text": "SHELVES"
+ },
+ {
+  "offset": 61084,
+  "text": "THRONE"
+ },
+ {
+  "offset": 61094,
+  "text": "FOUNTAIN"
+ },
+ {
+  "offset": 61106,
+  "text": "STATUE"
+ },
+ {
+  "offset": 61116,
+  "text": "BARREL"
+ },
+ {
+  "offset": 61126,
+  "text": "BARRELS"
+ },
+ {
+  "offset": 61138,
+  "text": "CHAIN"
+ },
+ {
+  "offset": 61148,
+  "text": "CHAINS"
+ },
+ {
+  "offset": 61158,
+  "text": "WALLS"
+ },
+ {
+  "offset": 61168,
+  "text": "WALL"
+ },
+ {
+  "offset": 61176,
+  "text": "ROOF"
+ },
+ {
+  "offset": 61184,
+  "text": "FLOOR"
+ },
+ {
+  "offset": 61194,
+  "text": "CEILING"
+ },
+ {
+  "offset": 61206,
+  "text": "ARCHWAY"
+ },
+ {
+  "offset": 61218,
+  "text": "ARCHWAYS"
+ },
+ {
+  "offset": 61230,
+  "text": "GARDEN"
+ },
+ {
+  "offset": 61240,
+  "text": "GARDENS"
+ },
+ {
+  "offset": 61252,
+  "text": "STAIRS"
+ },
+ {
+  "offset": 61262,
+  "text": "STAIR"
+ },
+ {
+  "offset": 61272,
+  "text": "STAIRCASE"
+ },
+ {
+  "offset": 61286,
+  "text": "BALCONY"
+ },
+ {
+  "offset": 61298,
+  "text": "GATE"
+ },
+ {
+  "offset": 61306,
+  "text": " It looks"
+ },
+ {
+  "offset": 61320,
+  "text": " very Strong."
+ },
+ {
+  "offset": 61338,
+  "text": "DOOR"
+ },
+ {
+  "offset": 61346,
+  "text": "I can't see"
+ },
+ {
+  "offset": 61362,
+  "text": "a "
+ },
+ {
+  "offset": 61368,
+  "text": ","
+ },
+ {
+  "offset": 61374,
+  "text": "and I don't"
+ },
+ {
+  "offset": 61390,
+  "text": "have a"
+ },
+ {
+  "offset": 61400,
+  "text": "looks Mean!"
+ },
+ {
+  "offset": 61416,
+  "text": "looks Dead!"
+ },
+ {
+  "offset": 61432,
+  "text": " The "
+ },
+ {
+  "offset": 61442,
+  "text": " looks pretty"
+ },
+ {
+  "offset": 61460,
+  "text": " but unhappy."
+ },
+ {
+  "offset": 61478,
+  "text": " You Don't"
+ },
+ {
+  "offset": 61492,
+  "text": " Have it!"
+ },
+ {
+  "offset": 61506,
+  "text": " It's lit"
+ },
+ {
+  "offset": 61520,
+  "text": " Magically"
+ },
+ {
+  "offset": 61534,
+  "text": " On the back"
+ },
+ {
+  "offset": 61550,
+  "text": " it says:"
+ },
+ {
+  "offset": 61564,
+  "text": "Protection from"
+ },
+ {
+  "offset": 61584,
+  "text": "Traps."
+ },
+ {
+  "offset": 61594,
+  "text": " It is titled"
+ },
+ {
+  "offset": 61612,
+  "text": "  `The Gate'"
+ },
+ {
+  "offset": 61628,
+  "text": " Magical!"
+ },
+ {
+  "offset": 61642,
+  "text": " Sharp!"
+ },
+ {
+  "offset": 61654,
+  "text": " It looks Old!"
+ },
+ {
+  "offset": 61672,
+  "text": " They're"
+ },
+ {
+  "offset": 61684,
+  "text": " Bifocals"
+ },
+ {
+  "offset": 61702,
+  "text": " You see a man"
+ },
+ {
+  "offset": 61720,
+  "text": "in a winding"
+ },
+ {
+  "offset": 61736,
+  "text": "passage,waving"
+ },
+ {
+  "offset": 61754,
+  "text": "a Wand."
+ },
+ {
+  "offset": 61766,
+  "text": "In the Cyrstal"
+ },
+ {
+  "offset": 61784,
+  "text": "Ball...."
+ },
+ {
+  "offset": 61796,
+  "text": " Tough!"
+ },
+ {
+  "offset": 61808,
+  "text": " It's empty."
+ },
+ {
+  "offset": 61824,
+  "text": " It's filled"
+ },
+ {
+  "offset": 61840,
+  "text": " with water."
+ },
+ {
+  "offset": 61856,
+  "text": " It's made of"
+ },
+ {
+  "offset": 61874,
+  "text": " Gold!"
+ },
+ {
+  "offset": 61884,
+  "text": " Expensive!"
+ },
+ {
+  "offset": 61900,
+  "text": " They look"
+ },
+ {
+  "offset": 61914,
+  "text": " Stone."
+ },
+ {
+  "offset": 61930,
+  "text": " It's covered"
+ },
+ {
+  "offset": 61948,
+  "text": " with Blood!"
+ },
+ {
+  "offset": 61964,
+  "text": " I don't see"
+ },
+ {
+  "offset": 61980,
+  "text": " a Table."
+ },
+ {
+  "offset": 61998,
+  "text": " There is a"
+ },
+ {
+  "offset": 62014,
+  "text": " Wine Flask"
+ },
+ {
+  "offset": 62030,
+  "text": " on top."
+ },
+ {
+  "offset": 62046,
+  "text": " Pair of Eye"
+ },
+ {
+  "offset": 62062,
+  "text": " Glasses on"
+ },
+ {
+  "offset": 62078,
+  "text": " Top."
+ },
+ {
+  "offset": 62096,
+  "text": " Key on top"
+ },
+ {
+  "offset": 62112,
+  "text": " It's made"
+ },
+ {
+  "offset": 62126,
+  "text": " of Wood."
+ },
+ {
+  "offset": 62140,
+  "text": " a desk!"
+ },
+ {
+  "offset": 62156,
+  "text": " They're Red."
+ },
+ {
+  "offset": 62178,
+  "text": " They're Blue."
+ },
+ {
+  "offset": 62196,
+  "text": " They're Old."
+ },
+ {
+  "offset": 62214,
+  "text": " It's Old."
+ },
+ {
+  "offset": 62228,
+  "text": " It's Red."
+ },
+ {
+  "offset": 62242,
+  "text": " It's Blue."
+ },
+ {
+  "offset": 62262,
+  "text": " It's Purple."
+ },
+ {
+  "offset": 62280,
+  "text": " It's Yellow."
+ },
+ {
+  "offset": 62298,
+  "text": " any Beds."
+ },
+ {
+  "offset": 62312,
+  "text": " a Bed."
+ },
+ {
+  "offset": 62332,
+  "text": "There's a book"
+ },
+ {
+  "offset": 62350,
+  "text": "on it."
+ },
+ {
+  "offset": 62360,
+  "text": "on one."
+ },
+ {
+  "offset": 62376,
+  "text": " They're made"
+ },
+ {
+  "offset": 62394,
+  "text": " of wood."
+ },
+ {
+  "offset": 62408,
+  "text": " one."
+ },
+ {
+  "offset": 62418,
+  "text": " any."
+ },
+ {
+  "offset": 62428,
+  "text": " The Staircase"
+ },
+ {
+  "offset": 62446,
+  "text": " leads up."
+ },
+ {
+  "offset": 62460,
+  "text": " leads down."
+ },
+ {
+  "offset": 62476,
+  "text": " leads both"
+ },
+ {
+  "offset": 62492,
+  "text": " up & Down."
+ },
+ {
+  "offset": 62508,
+  "text": " any stairs!"
+ },
+ {
+  "offset": 62524,
+  "text": " a staircase!"
+ },
+ {
+  "offset": 62542,
+  "text": " A throne!"
+ },
+ {
+  "offset": 62556,
+  "text": " The throne is"
+ },
+ {
+  "offset": 62574,
+  "text": " made of stone."
+ },
+ {
+  "offset": 62594,
+  "text": " A fountain!"
+ },
+ {
+  "offset": 62610,
+  "text": "The fountain"
+ },
+ {
+  "offset": 62626,
+  "text": "is filled"
+ },
+ {
+  "offset": 62640,
+  "text": "with water.But"
+ },
+ {
+  "offset": 62658,
+  "text": "you can't see"
+ },
+ {
+  "offset": 62676,
+  "text": "In it."
+ },
+ {
+  "offset": 62686,
+  "text": " A Statue!"
+ },
+ {
+  "offset": 62704,
+  "text": " The statue is"
+ },
+ {
+  "offset": 62722,
+  "text": " wearing a"
+ },
+ {
+  "offset": 62736,
+  "text": " Necklace"
+ },
+ {
+  "offset": 62750,
+  "text": " The Statue"
+ },
+ {
+  "offset": 62766,
+  "text": " looks like"
+ },
+ {
+  "offset": 62782,
+  "text": " The King!"
+ },
+ {
+  "offset": 62796,
+  "text": " A Mirror!"
+ },
+ {
+  "offset": 62810,
+  "text": " any Barrels!"
+ },
+ {
+  "offset": 62828,
+  "text": " a Barrel!"
+ },
+ {
+  "offset": 62842,
+  "text": " Old!"
+ },
+ {
+  "offset": 62852,
+  "text": " any Chains!"
+ },
+ {
+  "offset": 62868,
+  "text": " a Chain!"
+ },
+ {
+  "offset": 62886,
+  "text": "The Wall Says:"
+ },
+ {
+  "offset": 62904,
+  "text": "Kevin Bales"
+ },
+ {
+  "offset": 62920,
+  "text": "was Here!"
+ },
+ {
+  "offset": 62934,
+  "text": "The walls are"
+ },
+ {
+  "offset": 62952,
+  "text": "many Colors!"
+ },
+ {
+  "offset": 62968,
+  "text": "are made of"
+ },
+ {
+  "offset": 62984,
+  "text": "Gray Stone."
+ },
+ {
+  "offset": 63004,
+  "text": " I Don't see"
+ },
+ {
+  "offset": 63020,
+  "text": " A Garden!"
+ },
+ {
+  "offset": 63038,
+  "text": "The Garden"
+ },
+ {
+  "offset": 63052,
+  "text": "Has A Fountain"
+ },
+ {
+  "offset": 63070,
+  "text": "in the middle."
+ },
+ {
+  "offset": 63088,
+  "text": " BIG Gem in "
+ },
+ {
+  "offset": 63104,
+  "text": " the Garden"
+ },
+ {
+  "offset": 63120,
+  "text": " Fountain!"
+ },
+ {
+  "offset": 63134,
+  "text": "I don't see"
+ },
+ {
+  "offset": 63150,
+  "text": "a Balcony!"
+ },
+ {
+  "offset": 63164,
+  "text": "The balcony is"
+ },
+ {
+  "offset": 63182,
+  "text": "made of stone."
+ },
+ {
+  "offset": 63200,
+  "text": "You don't have"
+ },
+ {
+  "offset": 63218,
+  "text": " Done."
+ },
+ {
+  "offset": 63228,
+  "text": " Something is"
+ },
+ {
+  "offset": 63246,
+  "text": " in the way!"
+ },
+ {
+  "offset": 63262,
+  "text": "BLOOD"
+ },
+ {
+  "offset": 63272,
+  "text": "Yuc!!"
+ },
+ {
+  "offset": 63282,
+  "text": " Connected to"
+ },
+ {
+  "offset": 63300,
+  "text": " the wall."
+ },
+ {
+  "offset": 63314,
+  "text": "I don't think"
+ },
+ {
+  "offset": 63332,
+  "text": "that would be"
+ },
+ {
+  "offset": 63350,
+  "text": "very safe!"
+ },
+ {
+  "offset": 63364,
+  "text": "Impossible!!"
+ },
+ {
+  "offset": 63380,
+  "text": "are too heavy!"
+ },
+ {
+  "offset": 63398,
+  "text": "see any!"
+ },
+ {
+  "offset": 63410,
+  "text": " Get it"
+ },
+ {
+  "offset": 63422,
+  "text": " Yourself!"
+ },
+ {
+  "offset": 63436,
+  "text": " You already"
+ },
+ {
+  "offset": 63452,
+  "text": " have it!"
+ },
+ {
+  "offset": 63466,
+  "text": " a "
+ },
+ {
+  "offset": 63474,
+  "text": " I can't"
+ },
+ {
+  "offset": 63486,
+  "text": " reach it!"
+ },
+ {
+  "offset": 63500,
+  "text": "Done."
+ },
+ {
+  "offset": 63510,
+  "text": " The Barrels"
+ },
+ {
+  "offset": 63526,
+  "text": " are empty."
+ },
+ {
+  "offset": 63542,
+  "text": "a Container!"
+ },
+ {
+  "offset": 63558,
+  "text": "The flask is"
+ },
+ {
+  "offset": 63574,
+  "text": "full!"
+ },
+ {
+  "offset": 63592,
+  "text": "- Inventory -"
+ },
+ {
+  "offset": 63610,
+  "text": "   Nothing."
+ },
+ {
+  "offset": 63626,
+  "text": " You don't"
+ },
+ {
+  "offset": 63640,
+  "text": "Ok."
+ },
+ {
+  "offset": 63648,
+  "text": "I'm wearing it."
+ },
+ {
+  "offset": 63668,
+  "text": " The crown is"
+ },
+ {
+  "offset": 63686,
+  "text": " too Heavy!"
+ },
+ {
+  "offset": 63702,
+  "text": " Ok."
+ },
+ {
+  "offset": 63710,
+  "text": " I'm wearing"
+ },
+ {
+  "offset": 63726,
+  "text": " them."
+ },
+ {
+  "offset": 63736,
+  "text": "That could be"
+ },
+ {
+  "offset": 63754,
+  "text": "Difficult!"
+ },
+ {
+  "offset": 63768,
+  "text": "makes Horrible"
+ },
+ {
+  "offset": 63786,
+  "text": "music!!"
+ },
+ {
+  "offset": 63798,
+  "text": "MB O3 L24 C D E F# G# A# O4 C O3 A# G# F# E D C6"
+ },
+ {
+  "offset": 63850,
+  "text": "The Harp makes"
+ },
+ {
+  "offset": 63868,
+  "text": "Beautiful"
+ },
+ {
+  "offset": 63882,
+  "text": "Music!"
+ },
+ {
+  "offset": 63892,
+  "text": "The fairy"
+ },
+ {
+  "offset": 63906,
+  "text": "likes the music"
+ },
+ {
+  "offset": 63926,
+  "text": "and leaves!"
+ },
+ {
+  "offset": 63946,
+  "text": "The vampire"
+ },
+ {
+  "offset": 63962,
+  "text": "sees the holy"
+ },
+ {
+  "offset": 63980,
+  "text": "cross and"
+ },
+ {
+  "offset": 63994,
+  "text": "disappears!"
+ },
+ {
+  "offset": 64010,
+  "text": "You look awful"
+ },
+ {
+  "offset": 64028,
+  "text": "Silly waving"
+ },
+ {
+  "offset": 64044,
+  "text": "that "
+ },
+ {
+  "offset": 64054,
+  "text": "As you wave the"
+ },
+ {
+  "offset": 64074,
+  "text": "...."
+ },
+ {
+  "offset": 64082,
+  "text": "  Nothing"
+ },
+ {
+  "offset": 64096,
+  "text": "  Happens!"
+ },
+ {
+  "offset": 64110,
+  "text": "▓▓▓▓▓"
+ },
+ {
+  "offset": 64120,
+  "text": "  There is a"
+ },
+ {
+  "offset": 64136,
+  "text": "*Puff* of smoke"
+ },
+ {
+  "offset": 64156,
+  "text": "Revealing a"
+ },
+ {
+  "offset": 64172,
+  "text": "Secret passage!"
+ },
+ {
+  "offset": 64192,
+  "text": "    "
+ },
+ {
+  "offset": 64200,
+  "text": "scepter..."
+ },
+ {
+  "offset": 64214,
+  "text": "The Gate opens"
+ },
+ {
+  "offset": 64232,
+  "text": "by itself!"
+ },
+ {
+  "offset": 64246,
+  "text": " There's no"
+ },
+ {
+  "offset": 64262,
+  "text": " Genii in this"
+ },
+ {
+  "offset": 64280,
+  "text": " Lamp!"
+ },
+ {
+  "offset": 64290,
+  "text": "is cleaner now."
+ },
+ {
+  "offset": 64310,
+  "text": "looks at you"
+ },
+ {
+  "offset": 64326,
+  "text": "Funny!"
+ },
+ {
+  "offset": 64336,
+  "text": " have a Key!"
+ },
+ {
+  "offset": 64352,
+  "text": " a Gate!"
+ },
+ {
+  "offset": 64364,
+  "text": " The Gate"
+ },
+ {
+  "offset": 64378,
+  "text": " is locked"
+ },
+ {
+  "offset": 64392,
+  "text": " Magically."
+ },
+ {
+  "offset": 64408,
+  "text": " is already"
+ },
+ {
+  "offset": 64424,
+  "text": " locked!"
+ },
+ {
+  "offset": 64436,
+  "text": "a door!"
+ },
+ {
+  "offset": 64452,
+  "text": "  "
+ },
+ {
+  "offset": 64462,
+  "text": "BOOK"
+ },
+ {
+  "offset": 64470,
+  "text": " You can't"
+ },
+ {
+  "offset": 64484,
+  "text": " read That!"
+ },
+ {
+  "offset": 64500,
+  "text": " have a book!"
+ },
+ {
+  "offset": 64518,
+  "text": " You can't see"
+ },
+ {
+  "offset": 64536,
+  "text": " well enough."
+ },
+ {
+  "offset": 64554,
+  "text": " It's all"
+ },
+ {
+  "offset": 64568,
+  "text": " Blurry."
+ },
+ {
+  "offset": 64580,
+  "text": "The book reads:"
+ },
+ {
+  "offset": 64600,
+  "text": "  Wave Scepter"
+ },
+ {
+  "offset": 64618,
+  "text": "DOWN"
+ },
+ {
+  "offset": 64630,
+  "text": " I don't think"
+ },
+ {
+  "offset": 64648,
+  "text": " it's safe to"
+ },
+ {
+  "offset": 64666,
+  "text": " Jump here!"
+ },
+ {
+  "offset": 64682,
+  "text": "I Jumped."
+ },
+ {
+  "offset": 64696,
+  "text": "This is boring."
+ },
+ {
+  "offset": 64716,
+  "text": "▓"
+ },
+ {
+  "offset": 64722,
+  "text": "░"
+ },
+ {
+  "offset": 64728,
+  "text": "You have sprung"
+ },
+ {
+  "offset": 64748,
+  "text": "a Trap!! The"
+ },
+ {
+  "offset": 64764,
+  "text": "room has filled"
+ },
+ {
+  "offset": 64784,
+  "text": "with water and"
+ },
+ {
+  "offset": 64802,
+  "text": "you drowned!"
+ },
+ {
+  "offset": 64822,
+  "text": "any "
+ },
+ {
+  "offset": 64830,
+  "text": "That was good!"
+ },
+ {
+  "offset": 64848,
+  "text": "I feel much"
+ },
+ {
+  "offset": 64864,
+  "text": "better now!"
+ },
+ {
+  "offset": 64880,
+  "text": "That was good."
+ },
+ {
+  "offset": 64898,
+  "text": " have any."
+ },
+ {
+  "offset": 64912,
+  "text": "You don't"
+ },
+ {
+  "offset": 64926,
+  "text": "have any."
+ },
+ {
+  "offset": 64940,
+  "text": "You pour the"
+ },
+ {
+  "offset": 64956,
+  "text": "water & it"
+ },
+ {
+  "offset": 64970,
+  "text": "spills on"
+ },
+ {
+  "offset": 64984,
+  "text": "the ground."
+ },
+ {
+  "offset": 65000,
+  "text": "The goblet had"
+ },
+ {
+  "offset": 65018,
+  "text": "a hole in it!"
+ },
+ {
+  "offset": 65036,
+  "text": "advisable!"
+ },
+ {
+  "offset": 65050,
+  "text": "I can't pet"
+ },
+ {
+  "offset": 65066,
+  "text": "Do it yourself!"
+ },
+ {
+  "offset": 65086,
+  "text": "I can't kill"
+ },
+ {
+  "offset": 65102,
+  "text": "I don't have"
+ },
+ {
+  "offset": 65118,
+  "text": "."
+ },
+ {
+  "offset": 65124,
+  "text": "There's not"
+ },
+ {
+  "offset": 65140,
+  "text": "anyone to"
+ },
+ {
+  "offset": 65154,
+  "text": "show it to!"
+ },
+ {
+  "offset": 65170,
+  "text": "Writing on the"
+ },
+ {
+  "offset": 65188,
+  "text": "wall says..."
+ },
+ {
+  "offset": 65204,
+  "text": " No high score"
+ },
+ {
+  "offset": 65222,
+  "text": " Game Saved"
+ },
+ {
+  "offset": 65238,
+  "text": " There is no"
+ },
+ {
+  "offset": 65254,
+  "text": " file named"
+ },
+ {
+  "offset": 65274,
+  "text": "Press any key to continue"
+ },
+ {
+  "offset": 65304,
+  "text": "You're have failed to Escape!"
+ },
+ {
+  "offset": 65342,
+  "text": "You've Escaped the Castle!"
+ },
+ {
+  "offset": 65372,
+  "text": "You have collected these Treasues..."
+ },
+ {
+  "offset": 65412,
+  "text": "NONE"
+ },
+ {
+  "offset": 65420,
+  "text": "You have killed these Monsters......"
+ },
+ {
+  "offset": 65460,
+  "text": "Your Score:"
+ },
+ {
+  "offset": 65476,
+  "text": "MFT200O2L12DGBO3D4O2B4G4GABO3CO2BAGABO3C4"
+ },
+ {
+  "offset": 65522,
+  "text": "MFT200O2L12DF#AO3C4O2A4D4F#GABAGF#AF#G4"
+ },
+ {
+  "offset": 65570,
+  "text": "    PERFECT!"
+ },
+ {
+  "offset": 65586,
+  "text": "   (1550 is perfect)"
+ },
+ {
+  "offset": 65610,
+  "text": " - Press any key -"
+ },
+ {
+  "offset": 65632,
+  "text": "Play Again (Y/N)?  "
+ },
+ {
+  "offset": 65656,
+  "text": "Y"
+ },
+ {
+  "offset": 65662,
+  "text": "y"
+ },
+ {
+  "offset": 65668,
+  "text": "Loading..."
+ },
+ {
+  "offset": 65682,
+  "text": "You have made the High Score!"
+ },
+ {
+  "offset": 65716,
+  "text": "          "
+ },
+ {
+  "offset": 65730,
+  "text": "Enter Your Name - "
+ },
+ {
+  "offset": 65752,
+  "text": "┌──────────────────┐"
+ },
+ {
+  "offset": 65776,
+  "text": "│ Castle Adventure │"
+ },
+ {
+  "offset": 65800,
+  "text": "│  By Kevin Bales  │"
+ },
+ {
+  "offset": 65824,
+  "text": "└──────────────────┘"
+ },
+ {
+  "offset": 65848,
+  "text": "    █ █ █ █                 █ █ █ █  "
+ },
+ {
+  "offset": 65890,
+  "text": "    ▓▓▓▓▓▓▓                 ▓▓▓▓▓▓▓  "
+ },
+ {
+  "offset": 65932,
+  "text": "     ▓▓▓▓▓                   ▓▓▓▓▓   "
+ },
+ {
+  "offset": 65974,
+  "text": "     ▓▓▓▓▓ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▄▄ ▓▓▓▓▓   "
+ },
+ {
+  "offset": 66016,
+  "text": "     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓   "
+ },
+ {
+  "offset": 66058,
+  "text": "       ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓     "
+ },
+ {
+  "offset": 66100,
+  "text": "       ▓▓▓▓▓▓▓▓▓▓█████▓▓▓▓▓▓▓▓▓▓     "
+ },
+ {
+  "offset": 66142,
+  "text": "       ▓▓▓▓▓▓▓▓▓▓█┼┼┼█▓▓▓▓▓▓▓▓▓▓     "
+ },
+ {
+  "offset": 66184,
+  "text": "_______________________________________"
+ },
+ {
+  "offset": 66228,
+  "text": "MF MS T200 P1"
+ },
+ {
+  "offset": 66246,
+  "text": "MF MS T200 O2 L12 D D D G2 P4"
+ },
+ {
+  "offset": 66280,
+  "text": "L12 D D D G2 P4"
+ },
+ {
+  "offset": 66300,
+  "text": "L12 D D D L8 G D G B A G A B O3 C2 P3"
+ },
+ {
+  "offset": 66342,
+  "text": "O2 L12 D D D L8 G D G B A G O3 C O2 A G2"
+ },
+ {
+  "offset": 66386,
+  "text": "  P - to play    I - for instructions"
+ },
+ {
+  "offset": 66428,
+  "text": "p"
+ },
+ {
+  "offset": 66434,
+  "text": "i"
+ },
+ {
+  "offset": 66440,
+  "text": "   You are trapped in a deserted Castle"
+ },
+ {
+  "offset": 66484,
+  "text": "and you must escape. It is rumored that"
+ },
+ {
+  "offset": 66528,
+  "text": "the  castle is  full of treasures.  Can"
+ },
+ {
+  "offset": 66572,
+  "text": "you find them all?                     "
+ },
+ {
+  "offset": 66616,
+  "text": " Use the cursor keypad to move your man"
+ },
+ {
+  "offset": 66660,
+  "text": "around the rooms.  To pick up a visible"
+ },
+ {
+  "offset": 66704,
+  "text": "item,  just run into it.  To pick up an"
+ },
+ {
+  "offset": 66748,
+  "text": "item not displayed  on  the screen, use"
+ },
+ {
+  "offset": 66792,
+  "text": "the command  GET.  To  attack  monsters"
+ },
+ {
+  "offset": 66836,
+  "text": "just  run  into  them,  but only if you"
+ },
+ {
+  "offset": 66880,
+  "text": "have a weapon.The computer accepts most"
+ },
+ {
+  "offset": 66924,
+  "text": "two word commands. There are 83 rooms &"
+ },
+ {
+  "offset": 66968,
+  "text": "13 treasures.  To  see the High Score ,"
+ },
+ {
+  "offset": 67012,
+  "text": "look at the wall in the courtyard.     "
+ },
+ {
+  "offset": 67056,
+  "text": " one hint:Look at everything carefully!"
+ },
+ {
+  "offset": 67100,
+  "text": " To save a game type   SAVE + Filename "
+ },
+ {
+  "offset": 67144,
+  "text": " To load a game type   LOAD + Filename "
+ },
+ {
+  "offset": 67188,
+  "text": "UNRECOVERABLE ERROR! GET NEW COPY"
+ },
+ {
+  "offset": 67226,
+  "text": "You are missing the file CASTLE.RAN"
+ },
+ {
+  "offset": 67266,
+  "text": "Call Kevin Bales at 321-3841 for"
+ },
+ {
+  "offset": 67302,
+  "text": " a copy of this required data file."
+ }
+]

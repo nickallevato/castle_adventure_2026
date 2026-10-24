@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Engine check</title>
+<!-- Loads the engine in a real browser: node tools/serve.mjs, then open /test/engine/browser/engine-check.html -->
+<pre id="out">loading...</pre>
+<script type="module">
+  import { createGame } from "../../../src/engine/index.js";
+  const out = document.getElementById("out");
+  try {
+    const rooms = await (await fetch("../../../data/rooms.json")).json();
+    const game = createGame({ rooms, seed: 1 });
+    const ev = game.act({ type: "move", dir: "north" });
+    game.tick(1000);
+    out.textContent = "OK " + JSON.stringify({ player: game.getState().player.row, events: ev.length,
+      tiles: game.tileGrid(1)[17].join(","), actions: game.availableActions().length });
+  } catch (e) {
+    out.textContent = "FAIL " + e.stack;
+  }
+</script>

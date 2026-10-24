@@ -21,7 +21,13 @@
    "▓                      ▓",
    "▓▓▓▓▓▓▓▓▓▓════▓▓▓▓▓▓▓▓▓▓"
   ],
-  "description": "You are in the Castle Courtyard. To the north is a large Doorway.To thesouth is a large gate.",
+  "description": "You are in the Castle Courtyard. To the north is a large Doorway.To the south is a large gate.",
+  "descriptionLines": [
+   "You are in the Castle",
+   "Courtyard. To the north",
+   "is a large Doorway.To the",
+   "south is a large gate."
+  ],
   "exits": {
    "north": 2
   }
@@ -49,6 +55,11 @@
    "         ▓    ▓         "
   ],
   "description": "You are in the Entrance room. Exits are to the north & south.",
+  "descriptionLines": [
+   "You are in the Entrance",
+   "room. Exits are to the",
+   "north & south."
+  ],
   "exits": {
    "north": 3,
    "south": 1
@@ -77,6 +88,13 @@
    "         ▓    ▓         "
   ],
   "description": "You are in The Welcome Hall. This room was used to welcome guests. There are large archways in all four walls.",
+  "descriptionLines": [
+   "You are in The Welcome",
+   "Hall. This room was used",
+   "to welcome guests. There",
+   "are large archways in",
+   "all four walls."
+  ],
   "exits": {
    "north": 7,
    "south": 2,
@@ -106,7 +124,14 @@
    " ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ",
    "                        "
   ],
-  "description": "You are in The West Ballroom. There are arch ways to the north & east;a spiral staircase in onecorner.",
+  "description": "You are in The West Ballroom. There are arch ways to the north & east; a spiral staircase in one corner.",
+  "descriptionLines": [
+   "You are in The West",
+   "Ballroom. There are arch",
+   "ways to the north & east;",
+   "a spiral staircase in one",
+   "corner."
+  ],
   "exits": {
    "north": 8,
    "east": 3,
@@ -135,7 +160,14 @@
    " ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ",
    "                        "
   ],
-  "description": "You are in The East Ballroom. There are arch ways to the north & west;a spiral staircase in onecorner.",
+  "description": "You are in The East Ballroom. There are arch ways to the north & west; a spiral staircase in one corner.",
+  "descriptionLines": [
+   "You are in The East",
+   "Ballroom. There are arch",
+   "ways to the north & west;",
+   "a spiral staircase in one",
+   "corner."
+  ],
   "exits": {
    "north": 6,
    "west": 3,
@@ -164,7 +196,13 @@
    " ▓▓▓▓▓▓▓▓▓    ▓▓▓▓▓▓▓▓  ",
    "         ▓    ▓         "
   ],
-  "description": "You are in the East Dining room. The large opening to the east leadsto the garden patio.",
+  "description": "You are in the East Dining room. The large opening to the east leads to the garden patio.",
+  "descriptionLines": [
+   "You are in the East",
+   "Dining room. The large",
+   "opening to the east leads",
+   "to the garden patio."
+  ],
   "exits": {
    "north": 12,
    "south": 5,
@@ -195,6 +233,13 @@
    "         ▓    ▓         "
   ],
   "description": "You are in The Central Hall. Exits are in all directions. There is a large spiral staircase in the middle.",
+  "descriptionLines": [
+   "You are in The Central",
+   "Hall. Exits are in all",
+   "directions. There is a",
+   "large spiral staircase",
+   "in the middle."
+  ],
   "exits": {
    "north": 13,
    "south": 3,
@@ -225,7 +270,13 @@
    " ▓▓▓▓▓▓▓▓▓    ▓▓▓▓▓▓▓▓▓ ",
    "         ▓    ▓         "
   ],
-  "description": "You are in the West Dining room. There 2 doorways to the north, & archways to the east & south.",
+  "description": "You are in the West Dining room. There 2 door ways to the north, & arch ways to the east & south.",
+  "descriptionLines": [
+   "You are in the West",
+   "Dining room. There 2 door",
+   "ways to the north, & arch",
+   "ways to the east & south."
+  ],
   "exits": {
    "north": 9,
    "south": 4,
@@ -255,6 +306,11 @@
    "    ▓  ▓        ▓  ▓    "
   ],
   "description": "You are in The Kitchen. In the Center is a large stone table.",
+  "descriptionLines": [
+   "You are in The Kitchen.",
+   "In the Center is a large",
+   "stone table."
+  ],
   "exits": {
    "north": 11,
    "south": 8,
@@ -284,6 +340,11 @@
    "                        "
   ],
   "description": "You are in The Chef's Quarters. There is a small desk & a Bed here.",
+  "descriptionLines": [
+   "You are in The Chef's",
+   "Quarters. There is a",
+   "small desk & a Bed here."
+  ],
   "exits": {
    "west": 9
   }
@@ -310,7 +371,14 @@
    "          ▓  ▓          ",
    "          ▓  ▓          "
   ],
-  "description": "You are in the Storage room. There are Two largeshelves in the middle,anda Small Staircase in one corner.",
+  "description": "You are in the Storage room. There are Two large shelves in the middle,and a Small Staircase in one corner.",
+  "descriptionLines": [
+   "You are in the Storage",
+   "room. There are Two large",
+   "shelves in the middle,and",
+   "a Small Staircase in one",
+   "corner."
+  ],
   "exits": {
    "south": 9,
    "down": 68
@@ -339,6 +407,12 @@
    "         ▓    ▓         "
   ],
   "description": "You are in The Castle Museum. This room was once decorated with many artifacts.",
+  "descriptionLines": [
+   "You are in The Castle",
+   "Museum. This room was",
+   "once decorated with many",
+   "artifacts."
+  ],
   "exits": {
    "south": 6,
    "east": 17
@@ -366,7 +440,14 @@
    "         ▓    ▓         ",
    "         ▓    ▓         "
   ],
-  "description": "You are in the Ante Room.Here People waited for an audience with the KingIt was once lined with benches.",
+  "description": "You are in the Ante Room. Here People waited for an audience with the King It was once lined with benches.",
+  "descriptionLines": [
+   "You are in the Ante Room.",
+   "Here People waited for",
+   "an audience with the King",
+   "It was once lined with",
+   "benches."
+  ],
   "exits": {
    "north": 14,
    "south": 7
@@ -395,6 +476,12 @@
    "         ▓    ▓         "
   ],
   "description": "You are in the Throne Room. There is a Large Throne at one end of the room.",
+  "descriptionLines": [
+   "You are in the Throne",
+   "Room. There is a Large",
+   "Throne at one end of the",
+   "room."
+  ],
   "exits": {
    "south": 13,
    "east": 16,
@@ -423,7 +510,14 @@
    "                        ",
    "                        "
   ],
-  "description": "You are In the Kings Dressing room. It was Once Filled with clothes.There is a Staircase in one corner.",
+  "description": "You are In the Kings Dressing room. It was Once Filled with clothes. There is a Staircase in one corner.",
+  "descriptionLines": [
+   "You are In the Kings",
+   "Dressing room. It was",
+   "Once Filled with clothes.",
+   "There is a Staircase in",
+   "one corner."
+  ],
   "exits": {
    "east": 14,
    "up": 31
@@ -451,7 +545,14 @@
    "                        ",
    "                        "
   ],
-  "description": "You are in the Queen's Dressing room. It was once filled with clothes.There is a Staircase in one corner.",
+  "description": "You are in the Queen's Dressing room. It was once filled with clothes. There is a Staircase in one corner.",
+  "descriptionLines": [
+   "You are in the Queen's",
+   "Dressing room. It was",
+   "once filled with clothes.",
+   "There is a Staircase in",
+   "one corner."
+  ],
   "exits": {
    "west": 14,
    "up": 30
@@ -480,6 +581,11 @@
    "  ▓                   ▓ "
   ],
   "description": "You are In The North end of the Castle Garden. It is overgrown with bushes.",
+  "descriptionLines": [
+   "You are In The North end",
+   "of the Castle Garden. It",
+   "is overgrown with bushes."
+  ],
   "exits": {
    "south": 18,
    "west": 12
@@ -508,6 +614,11 @@
    "                        "
   ],
   "description": "You are in The South end of The Castle garden. In the center is a fountain.",
+  "descriptionLines": [
+   "You are in The South end",
+   "of The Castle garden. In",
+   "the center is a fountain."
+  ],
   "exits": {
    "north": 17,
    "west": 6
@@ -536,6 +647,12 @@
    "                        "
   ],
   "description": "You are in the center of The upper Hall. There is a statue of the King in the middle.",
+  "descriptionLines": [
+   "You are in the center of",
+   "The upper Hall. There is",
+   "a statue of the King in",
+   "the middle."
+  ],
   "exits": {
    "north": 23,
    "east": 21,
@@ -565,6 +682,12 @@
    "                        "
   ],
   "description": "You are in the west end of the Upper hall. There is a staircase leading down.",
+  "descriptionLines": [
+   "You are in the west end",
+   "of the Upper hall. There",
+   "is a staircase leading",
+   "down."
+  ],
   "exits": {
    "north": 24,
    "east": 19,
@@ -594,6 +717,12 @@
    "                        "
   ],
   "description": "You are in the east end of the Upper Hall. There is a Staircase leading down.",
+  "descriptionLines": [
+   "You are in the east end",
+   "of the Upper Hall. There",
+   "is a Staircase leading",
+   "down."
+  ],
   "exits": {
    "north": 22,
    "west": 19,
@@ -623,6 +752,12 @@
    "         ▓    ▓         "
   ],
   "description": "You are in The Guards Hall. This room was once used to honor Members of the Royal Guard.",
+  "descriptionLines": [
+   "You are in The Guards",
+   "Hall. This room was once",
+   "used to honor Members of",
+   "the Royal Guard."
+  ],
   "exits": {
    "north": 25,
    "south": 21,
@@ -652,7 +787,12 @@
    " ▓▓▓▓▓▓▓▓▓    ▓▓▓▓▓▓▓▓▓ ",
    "         ▓    ▓         "
   ],
-  "description": "You are in the Anex Hall.There is a large spiral staircase in the middle.",
+  "description": "You are in the Anex Hall. There is a large spiral staircase in the middle.",
+  "descriptionLines": [
+   "You are in the Anex Hall.",
+   "There is a large spiral",
+   "staircase in the middle."
+  ],
   "exits": {
    "north": 28,
    "south": 19,
@@ -684,6 +824,12 @@
    "         ▓    ▓         "
   ],
   "description": "You are in The Knights Hall. This room was once used to Honor The King's Knights.",
+  "descriptionLines": [
+   "You are in The Knights",
+   "Hall. This room was once",
+   "used to Honor The King's",
+   "Knights."
+  ],
   "exits": {
    "north": 26,
    "south": 20,
@@ -713,6 +859,11 @@
    "                 ▓  ▓   "
   ],
   "description": "You are in a lower Battlement. There is a staircase at one end.",
+  "descriptionLines": [
+   "You are in a lower",
+   "Battlement. There is a",
+   "staircase at one end."
+  ],
   "exits": {
    "south": 22,
    "up": 42
@@ -741,6 +892,11 @@
    "   ▓  ▓                 "
   ],
   "description": "You are In a Lower Battlement. There is a staircase at one end.",
+  "descriptionLines": [
+   "You are In a Lower",
+   "Battlement. There is a",
+   "staircase at one end."
+  ],
   "exits": {
    "south": 24,
    "up": 45
@@ -769,6 +925,9 @@
    "                        "
   ],
   "description": "You are In a Guest room.",
+  "descriptionLines": [
+   "You are In a Guest room."
+  ],
   "exits": {
    "east": 28
   }
@@ -796,6 +955,9 @@
    "          ▓  ▓          "
   ],
   "description": "You are in a Cooridor.",
+  "descriptionLines": [
+   "You are in a Cooridor."
+  ],
   "exits": {
    "north": 32,
    "south": 23,
@@ -826,6 +988,9 @@
    "                        "
   ],
   "description": "You are In a Guest Room.",
+  "descriptionLines": [
+   "You are In a Guest Room."
+  ],
   "exits": {
    "west": 28
   }
@@ -853,6 +1018,13 @@
    "                        "
   ],
   "description": "You are in the Queen's Bed room. It was once furnished but is now empty. there is a stair case in one corner.",
+  "descriptionLines": [
+   "You are in the Queen's",
+   "Bed room. It was once",
+   "furnished but is now",
+   "empty. there is a stair",
+   "case in one corner."
+  ],
   "exits": {
    "west": 32,
    "down": 16
@@ -881,6 +1053,13 @@
    "                        "
   ],
   "description": "You are In the Kings room. It was once Furnished but is now empty. There is a staircase in one corner.",
+  "descriptionLines": [
+   "You are In the Kings room",
+   ". It was once Furnished",
+   "but is now empty. There",
+   "is a staircase in one",
+   "corner."
+  ],
   "exits": {
    "east": 32,
    "down": 15
@@ -909,6 +1088,11 @@
    "         ▓    ▓         "
   ],
   "description": "You are In a Cooridor. There is a staircase at one end.",
+  "descriptionLines": [
+   "You are In a Cooridor.",
+   "There is a staircase at",
+   "one end."
+  ],
   "exits": {
    "south": 28,
    "east": 30,
@@ -939,6 +1123,11 @@
    "                        "
   ],
   "description": "You are on a Balcony looking over the Castle Gardens.",
+  "descriptionLines": [
+   "You are on a Balcony",
+   "looking over the Castle",
+   "Gardens."
+  ],
   "exits": {
    "west": 22
   }
@@ -966,6 +1155,11 @@
    "         ▓    ▓         "
   ],
   "description": "You are In a Cooridor. there is a staircase at on end.",
+  "descriptionLines": [
+   "You are In a Cooridor.",
+   "there is a staircase at",
+   "on end."
+  ],
   "exits": {
    "south": 41,
    "east": 40,
@@ -996,6 +1190,9 @@
    "          ▓  ▓          "
   ],
   "description": "You are in a Cooridor.",
+  "descriptionLines": [
+   "You are in a Cooridor."
+  ],
   "exits": {
    "north": 39,
    "south": 37,
@@ -1025,6 +1222,9 @@
    "          ▓  ▓          "
   ],
   "description": "You are in a Cooridor.",
+  "descriptionLines": [
+   "You are in a Cooridor."
+  ],
   "exits": {
    "north": 40,
    "south": 38,
@@ -1054,6 +1254,12 @@
    "                        "
   ],
   "description": "You are in The Red Room. This is decorated all in red. It is mostly empty now except for 2 beds.",
+  "descriptionLines": [
+   "You are in The Red Room.",
+   "This is decorated all in",
+   "red. It is mostly empty",
+   "now except for 2 beds."
+  ],
   "exits": {
    "north": 35
   }
@@ -1080,7 +1286,13 @@
    "                        ",
    "                        "
   ],
-  "description": "You are in the Blue room.This room is decorated all in blue. It is now empty except for 2 beds.",
+  "description": "You are in the Blue room. This room is decorated all in blue. It is now empty except for 2 beds.",
+  "descriptionLines": [
+   "You are in the Blue room.",
+   "This room is decorated",
+   "all in blue. It is now",
+   "empty except for 2 beds."
+  ],
   "exits": {
    "north": 36
   }
@@ -1107,7 +1319,13 @@
    "          ▓  ▓          ",
    "          ▓  ▓          "
   ],
-  "description": "You are in the Purple room. It is Decorated allin purple. There is 1 bedleft.",
+  "description": "You are in the Purple room. It is Decorated all in purple. There is 1 bed left.",
+  "descriptionLines": [
+   "You are in the Purple",
+   "room. It is Decorated all",
+   "in purple. There is 1 bed",
+   "left."
+  ],
   "exits": {
    "south": 35,
    "east": 34
@@ -1135,7 +1353,13 @@
    "          ▓  ▓          ",
    "          ▓  ▓          "
   ],
-  "description": "You are in the Yellow room. It is decorated allin Yellow.Now it is emptyexcept for a desk & bed.",
+  "description": "You are in the Yellow room. It is decorated all in Yellow.Now it is empty except for a desk & bed.",
+  "descriptionLines": [
+   "You are in the Yellow",
+   "room. It is decorated all",
+   "in Yellow.Now it is empty",
+   "except for a desk & bed."
+  ],
   "exits": {
    "south": 36,
    "west": 34
@@ -1164,6 +1388,11 @@
    "                        "
   ],
   "description": "You are in a cooridor. There is a staircase at one end.",
+  "descriptionLines": [
+   "You are in a cooridor.",
+   "There is a staircase at",
+   "one end."
+  ],
   "exits": {
    "north": 34,
    "east": 36,
@@ -1194,6 +1423,11 @@
    "               ▓      ▓ "
   ],
   "description": "You are in An upper Battlement. There is a staircase in one corner.",
+  "descriptionLines": [
+   "You are in An upper",
+   "Battlement. There is a",
+   "staircase in one corner."
+  ],
   "exits": {
    "south": 43,
    "west": 45,
@@ -1224,6 +1458,12 @@
    "               ▓      ▓ "
   ],
   "description": "You are In an Upper Battlement. There is a long staircase leading down.",
+  "descriptionLines": [
+   "You are In an Upper",
+   "Battlement. There is a",
+   "long staircase leading",
+   "down."
+  ],
   "exits": {
    "north": 42,
    "south": 46,
@@ -1253,6 +1493,10 @@
    " ▓      ▓               "
   ],
   "description": "You are in an Upper Batlement.",
+  "descriptionLines": [
+   "You are in an Upper",
+   "Batlement."
+  ],
   "exits": {
    "north": 45,
    "south": 47
@@ -1281,6 +1525,11 @@
    " ▓      ▓               "
   ],
   "description": "You are in an Upper Battlement. There is a staircase in one corner.",
+  "descriptionLines": [
+   "You are in an Upper",
+   "Battlement. There is a",
+   "staircase in one corner."
+  ],
   "exits": {
    "south": 44,
    "east": 42,
@@ -1311,6 +1560,10 @@
    "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ "
   ],
   "description": "You are in an Upper Battlement.",
+  "descriptionLines": [
+   "You are in an Upper",
+   "Battlement."
+  ],
   "exits": {
    "north": 43,
    "west": 47
@@ -1339,6 +1592,10 @@
    " ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
   ],
   "description": "You are in an Upper Battlement.",
+  "descriptionLines": [
+   "You are in an Upper",
+   "Battlement."
+  ],
   "exits": {
    "north": 44,
    "east": 46
@@ -1367,6 +1624,12 @@
    " ▓      ▓               "
   ],
   "description": "You are on the Castle wall. There is a stair case leading down in one corner.",
+  "descriptionLines": [
+   "You are on the Castle",
+   "wall. There is a stair",
+   "case leading down in one",
+   "corner."
+  ],
   "exits": {
    "south": 61,
    "east": 49,
@@ -1396,6 +1659,12 @@
    "               ▓      ▓ "
   ],
   "description": "You are on the Castle wall. There is a stair case leading down in one corner.",
+  "descriptionLines": [
+   "You are on the Castle",
+   "wall. There is a stair",
+   "case leading down in one",
+   "corner."
+  ],
   "exits": {
    "south": 50,
    "west": 48,
@@ -1425,6 +1694,10 @@
    "               ▓      ▓ "
   ],
   "description": "You are at the Bottom of the East Tower.",
+  "descriptionLines": [
+   "You are at the Bottom of",
+   "the East Tower."
+  ],
   "exits": {
    "north": 49,
    "south": 51,
@@ -1454,6 +1727,10 @@
    "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ "
   ],
   "description": "You are on the Castle wall.",
+  "descriptionLines": [
+   "You are on the Castle",
+   "wall."
+  ],
   "exits": {
    "north": 50,
    "west": 60
@@ -1482,6 +1759,9 @@
    "         ▓    ▓         "
   ],
   "description": "You are in a Cooridor.",
+  "descriptionLines": [
+   "You are in a Cooridor."
+  ],
   "exits": {
    "south": 53,
    "east": 56,
@@ -1510,7 +1790,12 @@
    "                        ",
    "                        "
   ],
-  "description": "You are in a Cooridor. there is a Stairway goingdown.",
+  "description": "You are in a Cooridor. there is a Stairway going down.",
+  "descriptionLines": [
+   "You are in a Cooridor.",
+   "there is a Stairway going",
+   "down."
+  ],
   "exits": {
    "north": 52,
    "east": 55,
@@ -1541,6 +1826,9 @@
    "          ▓  ▓          "
   ],
   "description": "You are in a Cooridor.",
+  "descriptionLines": [
+   "You are in a Cooridor."
+  ],
   "exits": {
    "north": 57,
    "south": 58,
@@ -1570,6 +1858,9 @@
    "          ▓  ▓          "
   ],
   "description": "You are in a Cooridor.",
+  "descriptionLines": [
+   "You are in a Cooridor."
+  ],
   "exits": {
    "north": 56,
    "south": 59,
@@ -1599,6 +1890,11 @@
    "          ▓  ▓          "
   ],
   "description": "You are in the King's Study. A large Wooden Desk is all that is left.",
+  "descriptionLines": [
+   "You are in the King's",
+   "Study. A large Wooden",
+   "Desk is all that is left."
+  ],
   "exits": {
    "south": 55,
    "west": 52
@@ -1627,6 +1923,10 @@
    "          ▓ ▓▓          "
   ],
   "description": "You are in a totally Empty room.",
+  "descriptionLines": [
+   "You are in a totally",
+   "Empty room."
+  ],
   "exits": {
    "south": 54,
    "east": 52
@@ -1654,7 +1954,12 @@
    "    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓",
    "                        "
   ],
-  "description": "You are in the west end of The King's Library. Itis full of shelves.",
+  "description": "You are in the west end of The King's Library. It is full of shelves.",
+  "descriptionLines": [
+   "You are in the west end",
+   "of The King's Library. It",
+   "is full of shelves."
+  ],
   "exits": {
    "north": 54,
    "east": 59
@@ -1682,7 +1987,12 @@
    "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓    ",
    "                        "
   ],
-  "description": "You are in the East end of the King's Library. Itis full of shelves.",
+  "description": "You are in the East end of the King's Library. It is full of shelves.",
+  "descriptionLines": [
+   "You are in the East end",
+   "of the King's Library. It",
+   "is full of shelves."
+  ],
   "exits": {
    "north": 55,
    "west": 58
@@ -1711,6 +2021,10 @@
    " ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
   ],
   "description": "You are on the Castle Wall.",
+  "descriptionLines": [
+   "You are on the Castle",
+   "Wall."
+  ],
   "exits": {
    "north": 61,
    "east": 51
@@ -1739,6 +2053,12 @@
    " ▓      ▓               "
   ],
   "description": "You are Below the West Tower. there is a large staircase leading up the tower.",
+  "descriptionLines": [
+   "You are Below the West",
+   "Tower. there is a large",
+   "staircase leading up the",
+   "tower."
+  ],
   "exits": {
    "north": 48,
    "south": 60,
@@ -1768,6 +2088,11 @@
    "                        "
   ],
   "description": "You are in the West Tower.There is a Passage to the East.",
+  "descriptionLines": [
+   "You are in the West Tower",
+   ".There is a Passage to",
+   "the East."
+  ],
   "exits": {
    "east": 67,
    "up": 64,
@@ -1797,6 +2122,11 @@
    "                        "
   ],
   "description": "You are in The East Tower. There are Stairs Going both up & down.",
+  "descriptionLines": [
+   "You are in The East Tower",
+   ". There are Stairs Going",
+   "both up & down."
+  ],
   "exits": {
    "up": 65,
    "down": 50
@@ -1824,7 +2154,11 @@
    "                        ",
    "                        "
   ],
-  "description": "You are at the top of theWest tower.",
+  "description": "You are at the top of the West tower.",
+  "descriptionLines": [
+   "You are at the top of the",
+   "West tower."
+  ],
   "exits": {
    "down": 62
   }
@@ -1851,7 +2185,11 @@
    "                        ",
    "                        "
   ],
-  "description": "You are at the top of theEast Tower.",
+  "description": "You are at the top of the East Tower.",
+  "descriptionLines": [
+   "You are at the top of the",
+   "East Tower."
+  ],
   "exits": {
    "down": 63
   }
@@ -1879,6 +2217,10 @@
    "                        "
   ],
   "description": "You are in the Sorcerers secret laboratory.",
+  "descriptionLines": [
+   "You are in the Sorcerers",
+   "secret laboratory."
+  ],
   "exits": {
    "west": 67
   }
@@ -1905,7 +2247,13 @@
    "                        ",
    "                        "
   ],
-  "description": "You are in the Sorcerers Quarters. Two Beds and a large mirror are all thatis left.",
+  "description": "You are in the Sorcerers Quarters. Two Beds and a large mirror are all that is left.",
+  "descriptionLines": [
+   "You are in the Sorcerers",
+   "Quarters. Two Beds and a",
+   "large mirror are all that",
+   "is left."
+  ],
   "exits": {
    "west": 62,
    "east": 66
@@ -1933,7 +2281,13 @@
    "       ▓  ▓             ",
    "       ▓  ▓             "
   ],
-  "description": "You are in the Royal WineCellar. It is filled withmany Barrels. At one end is a Large metal Door.",
+  "description": "You are in the Royal Wine Cellar. It is filled with many Barrels. At one end is a Large metal Door.",
+  "descriptionLines": [
+   "You are in the Royal Wine",
+   "Cellar. It is filled with",
+   "many Barrels. At one end",
+   "is a Large metal Door."
+  ],
   "exits": {
    "south": 69,
    "up": 11
@@ -1962,6 +2316,10 @@
    "       ▓  ▓             "
   ],
   "description": "You are in a long Passageway.",
+  "descriptionLines": [
+   "You are in a long",
+   "Passageway."
+  ],
   "exits": {
    "north": 68,
    "south": 70
@@ -1990,6 +2348,9 @@
    "▓ ▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
   ],
   "description": "You are in a Maze.",
+  "descriptionLines": [
+   "You are in a Maze."
+  ],
   "exits": {
    "north": 69,
    "south": 72,
@@ -2019,6 +2380,9 @@
    "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓▓▓▓▓▓"
   ],
   "description": "You are in a Maze.",
+  "descriptionLines": [
+   "You are in a Maze."
+  ],
   "exits": {
    "west": 70
   }
@@ -2046,6 +2410,9 @@
    "▓  ▓▓▓▓▓▓  ▓▓▓▓▓▓▓▓▓▓▓▓▓"
   ],
   "description": "You are in a Maze.",
+  "descriptionLines": [
+   "You are in a Maze."
+  ],
   "exits": {
    "north": 70,
    "south": 74,
@@ -2075,6 +2442,9 @@
    "▓▓▓▓▓▓  ▓  ▓▓▓  ▓▓▓▓▓▓▓▓"
   ],
   "description": "You are in a Maze.",
+  "descriptionLines": [
+   "You are in a Maze."
+  ],
   "exits": {
    "south": 75,
    "west": 72
@@ -2103,6 +2473,9 @@
    "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
   ],
   "description": "You are in a Maze.",
+  "descriptionLines": [
+   "You are in a Maze."
+  ],
   "exits": {
    "north": 72,
    "east": 75
@@ -2131,6 +2504,9 @@
    "▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓▓▓▓▓▓"
   ],
   "description": "You are in a Maze.",
+  "descriptionLines": [
+   "You are in a Maze."
+  ],
   "exits": {
    "north": 73,
    "south": 76,
@@ -2160,6 +2536,10 @@
    "                        "
   ],
   "description": "You are in a Winding Passage.",
+  "descriptionLines": [
+   "You are in a Winding",
+   "Passage."
+  ],
   "exits": {
    "north": 75,
    "east": 77
@@ -2188,6 +2568,10 @@
    "   ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ "
   ],
   "description": "You are in a Winding Passage.",
+  "descriptionLines": [
+   "You are in a Winding",
+   "Passage."
+  ],
   "exits": {
    "north": 78,
    "west": 76,
@@ -2217,6 +2601,10 @@
    "          ▓  ▓          "
   ],
   "description": "You are in a Winding passage.",
+  "descriptionLines": [
+   "You are in a Winding",
+   "passage."
+  ],
   "exits": {
    "south": 77,
    "east": 81
@@ -2244,7 +2632,13 @@
    "                        ",
    "                        "
   ],
-  "description": "You are in the Toture room. There are chains onone wall, and a Large Table.",
+  "description": "You are in the Toture room. There are chains on one wall, and a Large Table.",
+  "descriptionLines": [
+   "You are in the Toture",
+   "room. There are chains on",
+   "one wall, and a Large",
+   "Table."
+  ],
   "exits": {
    "north": 81
   }
@@ -2272,6 +2666,9 @@
    "         ▓    ▓         "
   ],
   "description": "You are in the Dungeon.",
+  "descriptionLines": [
+   "You are in the Dungeon."
+  ],
   "exits": {
    "south": 81
   }
@@ -2299,6 +2696,10 @@
    "          ▓  ▓          "
   ],
   "description": "You are in the Dungeon Annex.",
+  "descriptionLines": [
+   "You are in the Dungeon",
+   "Annex."
+  ],
   "exits": {
    "north": 80,
    "south": 79,
@@ -2329,6 +2730,12 @@
    "                        "
   ],
   "description": "You are in the Dungeon entrace hall. There is a long staircase leading up.",
+  "descriptionLines": [
+   "You are in the Dungeon",
+   "entrace hall. There is a",
+   "long staircase leading",
+   "up."
+  ],
   "exits": {
    "west": 81,
    "up": 43
@@ -2357,6 +2764,11 @@
    "                        "
   ],
   "description": "You are in the King's Secret room. The walls are many colors.",
+  "descriptionLines": [
+   "You are in the King's",
+   "Secret room. The walls",
+   "are many colors."
+  ],
   "exits": {
    "north": 77
   }

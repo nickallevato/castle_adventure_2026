@@ -1,0 +1,273 @@
+[
+ {
+  "id": "lamp",
+  "name": "Lamp",
+  "dataName": "LAMP",
+  "noun": "LAMP",
+  "glyph": "♠",
+  "treasure": false,
+  "room": 17,
+  "row": 13,
+  "col": 18
+ },
+ {
+  "id": "harp",
+  "name": "Harp",
+  "dataName": "HARP",
+  "noun": "HARP",
+  "glyph": "♫",
+  "treasure": true,
+  "room": 65,
+  "row": 7,
+  "col": 15
+ },
+ {
+  "id": "necklace",
+  "name": "Necklace",
+  "dataName": "NECKLACE",
+  "noun": "NECKLACE",
+  "glyph": "§",
+  "treasure": true,
+  "room": null,
+  "row": null,
+  "col": null,
+  "hiddenIn": 19,
+  "hiddenNear": [
+   "─",
+   "│"
+  ]
+ },
+ {
+  "id": "book",
+  "name": "Book",
+  "dataName": "BOOK",
+  "noun": "BOOK",
+  "glyph": "▬",
+  "treasure": false,
+  "room": null,
+  "row": null,
+  "col": null,
+  "hiddenIn": 58,
+  "hiddenNear": [
+   "█"
+  ]
+ },
+ {
+  "id": "magic_wand",
+  "name": "Magic Wand",
+  "dataName": "MAGIC WAND",
+  "noun": "WAND",
+  "glyph": "-",
+  "treasure": false,
+  "room": 24,
+  "row": 8,
+  "col": 3
+ },
+ {
+  "id": "sword",
+  "name": "Sword",
+  "dataName": "SWORD",
+  "noun": "SWORD",
+  "glyph": "┼",
+  "treasure": false,
+  "room": 12,
+  "row": 4,
+  "col": 10
+ },
+ {
+  "id": "key",
+  "name": "Key",
+  "dataName": "KEY",
+  "noun": "KEY",
+  "glyph": "τ",
+  "treasure": false,
+  "room": null,
+  "row": null,
+  "col": null,
+  "hiddenIn": 56,
+  "hiddenNear": [
+   "─",
+   "│"
+  ]
+ },
+ {
+  "id": "glasses",
+  "name": "Eye Glasses",
+  "dataName": "EYE GLASSES",
+  "noun": "GLASSES",
+  "glyph": "∞",
+  "treasure": false,
+  "room": null,
+  "row": null,
+  "col": null,
+  "hiddenIn": 40,
+  "hiddenNear": [
+   "─",
+   "│"
+  ]
+ },
+ {
+  "id": "crystal_ball",
+  "name": "Crystal Ball",
+  "dataName": "CRYSTAL BALL",
+  "noun": "BALL",
+  "glyph": "°",
+  "treasure": false,
+  "room": 66,
+  "row": 12,
+  "col": 9
+ },
+ {
+  "id": "helmet",
+  "name": "Helmet",
+  "dataName": "HELMET",
+  "noun": "HELMET",
+  "glyph": "¢",
+  "treasure": false,
+  "room": 22,
+  "row": 4,
+  "col": 11
+ },
+ {
+  "id": "wine_flask",
+  "name": "Wine Flask",
+  "dataName": "WINE FLASK",
+  "noun": "FLASK",
+  "glyph": "!",
+  "treasure": false,
+  "room": null,
+  "row": null,
+  "col": null,
+  "hiddenIn": 10,
+  "hiddenNear": [
+   "─",
+   "│"
+  ]
+ },
+ {
+  "id": "holy_cross",
+  "name": "Holy Cross",
+  "dataName": "HOLY CROSS",
+  "noun": "CROSS",
+  "glyph": "t",
+  "treasure": true,
+  "room": 37,
+  "row": 12,
+  "col": 14
+ },
+ {
+  "id": "diamond",
+  "name": "Diamond",
+  "dataName": "DIAMOND",
+  "noun": "DIAMOND",
+  "glyph": "♦",
+  "treasure": true,
+  "room": 57,
+  "row": 9,
+  "col": 12
+ },
+ {
+  "id": "silver_bars",
+  "name": "Silver Bars",
+  "dataName": "SILVER BARS",
+  "noun": "BARS",
+  "glyph": "≡",
+  "treasure": true,
+  "room": 26,
+  "row": 7,
+  "col": 6
+ },
+ {
+  "id": "ruby",
+  "name": "Rubys",
+  "dataName": "RUBYS",
+  "noun": "RUBYS",
+  "glyph": ":",
+  "treasure": true,
+  "room": 60,
+  "row": 15,
+  "col": 3
+ },
+ {
+  "id": "jade_figurine",
+  "name": "Jade Figurine",
+  "dataName": "JADE FIGURINE",
+  "noun": "FIGURINE",
+  "glyph": "¥",
+  "treasure": true,
+  "room": 29,
+  "row": 9,
+  "col": 12
+ },
+ {
+  "id": "scepter",
+  "name": "Scepter",
+  "dataName": "SCEPTER",
+  "noun": "SCEPTER",
+  "glyph": "ß",
+  "treasure": true,
+  "room": 83,
+  "row": 9,
+  "col": 11
+ },
+ {
+  "id": "hourglass",
+  "name": "Hourglass",
+  "dataName": "HOURGLASS",
+  "noun": "HOURGLASS",
+  "glyph": "Φ",
+  "treasure": true,
+  "room": 20,
+  "row": 13,
+  "col": 5
+ },
+ {
+  "id": "large_gem",
+  "name": "Large Gem",
+  "dataName": "LARGE GEM",
+  "noun": "GEM",
+  "glyph": "Θ",
+  "treasure": true,
+  "room": null,
+  "row": null,
+  "col": null,
+  "hiddenIn": 18,
+  "hiddenNear": [
+   "─",
+   "│"
+  ]
+ },
+ {
+  "id": "goldbar",
+  "name": "Goldbar",
+  "dataName": "GOLDBAR",
+  "noun": "GOLDBAR",
+  "glyph": "■",
+  "treasure": true,
+  "room": 74,
+  "row": 13,
+  "col": 22
+ },
+ {
+  "id": "goblet",
+  "name": "Fancy Goblet",
+  "dataName": "FANCY GOBLET",
+  "noun": "GOBLET",
+  "glyph": "µ",
+  "treasure": true,
+  "room": 8,
+  "row": 13,
+  "col": 5
+ },
+ {
+  "id": "crown",
+  "name": "Crown",
+  "dataName": "CROWN",
+  "noun": "CROWN",
+  "glyph": "⌂",
+  "treasure": true,
+  "room": 14,
+  "row": 4,
+  "col": 8
+ }
+]

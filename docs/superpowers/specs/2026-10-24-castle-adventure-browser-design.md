@@ -3,7 +3,7 @@
 ## Intent
 
 Play Kevin Bales' *Castle Adventure* (1984/85, DOS freeware) in a modern browser. It should be faithful
-to the original castle, puzzles and text, drawn in a "storybook map" style (ink on parchment, not
+to the original castle, puzzles and text, drawn as Amiga-era pixel art with Mark Ferrari-style color cycling (not
 ASCII), with a few modern conveniences and a dev mode for exploring the whole world. Keep it nice and
 simple.
 
@@ -12,9 +12,22 @@ simple.
 - All 83 rooms, with layouts, descriptions and exits taken from the original `original/CASTLE.RAN`
   (already extracted to `data/rooms.json` by `tools/extract-rooms.mjs`).
 - Game behavior (items, monsters, combat, puzzles, scoring, escaping) matches the original.
-- Storybook-map rendering. The mockup the user picked is
-  `.superpowers/brainstorm/2270824-1792832686/content/visual-style.html`, style C: parchment
-  floor, dark ink walls, hand-inked bushes and furniture, a vignette, and simple inked sprites.
+- Amiga / Mark Ferrari color-cycling look (user's choice, which replaced an earlier storybook-map pick),
+  produced by emulating the real Amiga AGA (A1200/A4000) display model rather than imitating it:
+  - a PAL lowres 320x256 screen, integer-scaled, no smoothing.
+  - 8 bitplanes (256 colors), stored planar like chip RAM (40 bytes/row, MSB = leftmost pixel). A
+    pixel's color index is assembled from one bit per plane.
+  - a blitter-style masked (cookie-cut) blit of planar tiles and BOB sprites into the planes.
+  - 256 color registers, each 24-bit (AGA). User chose 256 colors over OCS 32.
+  - a copper list (WAIT line / MOVE register) evaluated per scanline, for gradients and bars, the
+    split to the status-strip palette, and area mood.
+  - DeluxePaint-style color cycling: register rotation over ranges, stepped on a 50 Hz vblank. Room
+    changes fade the registers smoothly.
+  - a 24x18 room of 12x12 tiles = a 288x216 playfield at the top, with a ~40-line status strip below.
+  - Ferrari-style moody dithered art with cycling water, torchlight, magic, treasure glints and lamp
+    halos, all within those constraints.
+  - The QoL panels are HTML around the screen in Workbench-style chrome.
+  The emulation lives in `src/ui/amiga/`.
 - Modern conveniences (see below).
 - Dev mode, including a flyover of the whole world (see below).
 - Runs from a plain static server. No build step and no runtime dependencies.
@@ -62,7 +75,7 @@ Toggle it with the backtick key, or open it with `?dev` in the URL. It shows a d
 - **God mode:** monsters do no damage.
 - **Reveal:** shows every item and monster (at its current position), including on the world map.
 - **Give item** (pick from a list), **set strength**.
-- **World map:** all 83 rooms drawn in full storybook style, laid out spatially from their exits, with
+- **World map:** all 83 rooms drawn with the same color-cycling renderer (live cycling), laid out spatially from their exits, with
   one layer per floor (up and down exits change floor). You can pan and zoom, and click a room to
   teleport there.
 - **Flyover:** an animated camera glides smoothly across every room in the world map, floor by floor,
@@ -94,23 +107,43 @@ The two builders work in parallel against this interface. Changing it means upda
 import { createGame } from "./src/engine/index.js";
 
 const game = createGame({ rooms, seed });  // rooms = parsed data/rooms.json; seed makes randomness deterministic
+// optional extras: highScore: { name, points } (shown on the courtyard wall), monsterStepMs (default 500)
 
 game.getState()          // -> State. A plain JSON object (deep copy or frozen). Fully serializable.
 game.load(state)         // restore a saved State
 game.act(action)         // -> Event[]  player input
 game.tick(ms)            // -> Event[]  advance real time (monster movement, attacks)
-game.availableActions()  // -> [{ id, verb, item?, label, key? }]  what the action bar shows right now
+game.availableActions()  // -> [{ id, verb, item?, target?, label, key? }]  what the action bar shows right now
 game.tileGrid(roomId)    // -> string[18][24] semantic tile ids for the room's *current* state
 game.describe(roomId, row, col) // -> string|null  name for a hover tooltip (tile, item or monster)
 game.dev                 // { setNoclip(b), setGod(b), teleport(roomId, row?, col?), giveItem(itemId), setStrength(n) }
+                         // teleport and giveItem return Event[] like act()
 ```
 
 Actions:
 
 ```js
 { type: "move", dir: "north" | "south" | "east" | "west" }
+                                // also "northeast" | "northwest" | "southeast" | "southwest":
+                                // the original moved in 8 directions on the numeric keypad
 { type: "verb", verb, item? }   // verb ids come from availableActions(); engine documents the full list
+{ type: "verb", verb, target }  // target = something that isn't an item: a furniture noun ("desk",
+                                // "statue", "door", "gate", "wall"...), a monster id or kind, "down"
+{ type: "verb", verb: "say", text }
+{ type: "command", text }       // the original's typed two-word parser, e.g. "GET FLASK", "INV"
 ```
+
+Verbs (`act({type:"verb"})`): `look` (also `search`, `examine`; with no item or target it repeats the
+room description), `take` (`get`), `drop` (`throw`), `fill`, `wear`, `play`, `wave`, `rub` (`clean`),
+`say`, `unlock` (`open`), `lock` (`close`), `drink`, `pour`, `eat`, `read`, `jump` (`leep`), `climb`,
+`mirror`, `pet`, `kill`, `show`, `inventory`, and `use` (not an original verb: does the natural thing
+with an item, e.g. play the harp, wave the wand, read the book). `take` on a visible item next to you
+picks it up, as running into it does; hidden items are taken from beside the furniture they're in,
+the way the original's GET worked. Every answer is the original's text from CASTLE.EXE.
+
+Timing: monsters in your room take one step (or attack, if next to you) every `monsterStepMs`
+(500 ms). The original stepped them every 200 idle keyboard polls; its fights were balanced for a
+held key repeating about 10 times a second, so the UI should not send moves much faster than that.
 
 State (fields the UI relies on; the engine may add more):
 
@@ -126,12 +159,37 @@ State (fields the UI relies on; the engine may add more):
 }
 ```
 
+Engine additions to State (the UI may use them, never needs to): `player.lastMove {dr, dc}` (you
+drop things toward the cell you last moved to, as in the original); on items `hidden`,
+`hiddenIn` and `revealed` (hidden items have `room: null` until taken; `revealed` turns true once
+you've looked at the furniture hiding them); `flags { cellarLocked, dungeonLocked, flaskFull,
+drankWater }`; `prevRoom`, `mods` (puzzle map changes on the current room), `clockMs`, `rng`,
+`turn`, `version`. Monster notes: a killed monster stays where it fell with `alive: false` (the
+original left the body on screen); the fairy, the vampire and an unlocked door have `room: null`
+while they're gone; the doors are four `door` monsters, one per door cell.
+
 Events: `{type:"message", text}`, `{type:"roomChanged", from, to}`, `{type:"took", item}`,
 `{type:"dropped", item}`, `{type:"hit", by, target, damage}`, `{type:"died"}`, `{type:"escaped"}`, `{type:"scored", points}`.
 The UI should ignore event types it doesn't recognize.
 
+Engine additions to events: `message` also has `lines` (the original's short panel lines) and, for
+the room description sent on every room change, `kind: "description"`; `roomChanged` has
+`description`; `scored` has `score` (the new total; `points` is the change, and can be negative when a
+treasure leaves the courtyard); `hit` has `missed: true` on a miss (`damage` can be negative: the
+original's damage roll could heal); new: `{type:"killed", monster}`, `{type:"gameOver", status, score}`,
+`{type:"filled", item}`, `{type:"unlocked"|"locked", room}`, `{type:"mapChanged", room}` (a puzzle
+redrew the room; call `tileGrid` again), `{type:"monsterLeft", monster}` (fairy or vampire).
+
+Score works as in the original: 50 per treasure carried or lying in the courtyard, 100 per monster
+killed, 100 for escaping; 1550 is perfect. `treasuresFound` counts the treasures carried or in the
+courtyard.
+
 Coordinates: `row` 0–17, `col` 0–23. Walking off the room edge through an opening takes the exit in
 that direction. Stepping on a stair tile takes the up or down exit.
+
+`data/rooms.json` rooms also carry `descriptionLines` (the original's five 25-column lines). The
+original stores 125 characters of description per room, not 120, so the last words of a few rooms
+were cut off before; `description` is those lines joined with spaces.
 
 ### Semantic tile ids (`tileGrid`)
 

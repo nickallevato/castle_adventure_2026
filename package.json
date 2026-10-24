@@ -6,7 +6,7 @@
   "description": "Kevin Bales' Castle Adventure (1984) rebuilt for the browser",
   "scripts": {
     "start": "node tools/serve.mjs",
-    "test": "node --test test/",
+    "test": "node --test",
     "extract": "node tools/extract-rooms.mjs"
   }
 }

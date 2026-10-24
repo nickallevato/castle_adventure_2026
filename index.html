@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Castle Adventure</title>
+  <meta name="description" content="Kevin Bales' Castle Adventure (1984), rebuilt for the browser on an emulated Amiga AGA display.">
+  <link rel="stylesheet" href="src/ui/style.css">
+</head>
+<body>
+  <div id="app" class="booting">
+    <header id="screenbar" class="wb-screenbar">
+      <span class="wb-depth"></span>
+      <span class="sb-title">Castle Adventure</span>
+      <span class="sb-info" id="sb-info"></span>
+      <span class="sb-spacer"></span>
+      <button class="wb-btn small" id="btn-map" title="Explored map (M)">Map</button>
+      <button class="wb-btn small" id="btn-menu" title="Menu (Esc)">Menu</button>
+    </header>
+
+    <main id="main">
+      <section id="monitor" aria-label="Game screen">
+        <div id="bezel"><canvas id="screen" width="320" height="256"></canvas></div>
+        <div id="tooltip" role="status" hidden></div>
+      </section>
+
+      <div id="dpad" aria-hidden="true">
+        <button data-dir="north" class="wb-btn up">&#9650;</button>
+        <button data-dir="west" class="wb-btn left">&#9664;</button>
+        <button data-dir="east" class="wb-btn right">&#9654;</button>
+        <button data-dir="south" class="wb-btn down">&#9660;</button>
+      </div>
+
+      <aside id="side">
+        <div class="wb-window" id="win-room">
+          <div class="wb-title"><span class="wb-close"></span><span class="wb-name" id="room-title">Room</span></div>
+          <div class="wb-body" id="room-desc"></div>
+        </div>
+        <div class="wb-window" id="win-actions">
+          <div class="wb-title"><span class="wb-close"></span><span class="wb-name">Actions</span></div>
+          <div class="wb-body" id="actions"></div>
+        </div>
+        <div class="wb-window" id="win-inv">
+          <div class="wb-title"><span class="wb-close"></span><span class="wb-name">Inventory</span><span class="wb-extra" id="stats"></span></div>
+          <div class="wb-body"><div id="strength"><span class="lbl">Strength</span><span class="bar"><i id="strength-fill"></i></span><span id="strength-num"></span></div><ul id="inventory"></ul></div>
+        </div>
+        <div class="wb-window grow" id="win-log">
+          <div class="wb-title"><span class="wb-close"></span><span class="wb-name">Messages</span></div>
+          <div class="wb-body" id="log" tabindex="0" aria-live="polite"></div>
+        </div>
+      </aside>
+    </main>
+
+    <div id="overlays"></div>
+  </div>
+  <noscript>Castle Adventure needs JavaScript.</noscript>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

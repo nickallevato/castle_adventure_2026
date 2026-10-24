@@ -2,8 +2,9 @@
 //
 // CASTLE.RAN layout: 83 room records, 575 bytes each, back to back, in CP437.
 //   432 bytes  map, 18 rows x 24 columns
-//   120 bytes  description, wrapped at 24 columns by the original
-//    23 bytes  exits, e.g. "N7S2E5W4" or "S43W45U49D25"
+//   125 bytes  description, shown by the original as 5 lines of 25 columns
+//    18 bytes  exits, e.g. "N7S2E5W4" or "S43W45U49D25"
+// (These widths come from the FIELD statement in CASTLE.EXE: 18 x 24, 125, 18.)
 // What follows the last room is the high-score record and is ignored.
 //
 // Usage: node tools/extract-rooms.mjs [original/CASTLE.RAN] [data/rooms.json]
@@ -50,9 +51,18 @@ for (let i = 0; i < ROOM_COUNT; i++) {
   const rec = decode(buf.subarray(i * RECORD, (i + 1) * RECORD));
   const map = [];
   for (let r = 0; r < ROWS; r++) map.push(rec.slice(r * COLS, (r + 1) * COLS));
-  const description = rec.slice(ROWS * COLS, ROWS * COLS + 120).replace(/\s+/g, " ").trim();
-  const exits = parseExits(rec.slice(552, 575));
-  rooms.push({ id: i + 1, map, description, exits });
+  const text = rec.slice(ROWS * COLS, ROWS * COLS + 125);
+  // The text runs straight across line ends ("To the" + "south"), so join the 25-column lines
+  // with a space to read the way the original screen showed it. descriptionLines keeps the
+  // original 25-column lines as they appeared on screen.
+  const descriptionLines = [];
+  for (let l = 0; l < 5; l++) descriptionLines.push(text.slice(l * 25, (l + 1) * 25).trimEnd());
+  while (descriptionLines.length && !descriptionLines[descriptionLines.length - 1]) descriptionLines.pop();
+  // (No space before punctuation: "King's room" + "." on the next line stays "room.")
+  const description = descriptionLines.map((l) => l.trim()).join(" ")
+    .replace(/\s+/g, " ").replace(/ ([.,;:!?])/g, "$1").trim();
+  const exits = parseExits(rec.slice(557, 575));
+  rooms.push({ id: i + 1, map, description, descriptionLines, exits });
 }
 
 mkdirSync(dirname(dest), { recursive: true });
