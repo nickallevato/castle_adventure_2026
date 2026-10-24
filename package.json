@@ -1,0 +1,12 @@
+{
+  "name": "castle-adventure-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Kevin Bales' Castle Adventure (1984) rebuilt for the browser",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node --test test/",
+    "extract": "node tools/extract-rooms.mjs"
+  }
+}
