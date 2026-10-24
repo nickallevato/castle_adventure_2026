@@ -2,3 +2,4 @@
 node_modules/
 *.png
 !assets/**/*.png
+!docs/screenshots/*.png
