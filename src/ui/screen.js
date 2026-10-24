@@ -167,6 +167,7 @@ export class GameScreen {
       this.banner.y0 = Math.round((PH - bb.height) / 2) - 8;
       blit(P, bb, Math.round(PF_X + (PW - bb.width) / 2), this.banner.y0);
     }
+    clearSides(P);
     if (this.statusDirty) this.drawStatus();
 
     // registers
@@ -269,6 +270,14 @@ export class GameScreen {
     gem.forEach((row, y) => [...row].forEach((ch, x) => { if (ch !== ".") setPixel(P, gx + x, gy + y, ch === "K" ? 4 : ch === "J" ? 19 : 6); }));
     if (s.flash) drawText(P, s.flash.slice(0, 50), 11, y0 + 40, 16, 4);
   }
+}
+
+// The playfield copy only covers its own columns, so anything drawn past its edges (the lamp halo
+// at the west/east wall, a sprite gliding off) would otherwise stay in the side borders for good.
+function clearSides(P) {
+  const l = PF_X >> 3, r = (PF_X + PW) >> 3;
+  for (const p of P.planes)
+    for (let y = 0; y < STRIP_Y; y++) { p.fill(0, y * P.bpr, y * P.bpr + l); p.fill(0, y * P.bpr + r, (y + 1) * P.bpr); }
 }
 
 function clearBelow(P, y) {
